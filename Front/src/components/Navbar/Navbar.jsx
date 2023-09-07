@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Navbar.css'
 
 
@@ -10,11 +10,12 @@ const Navbar = () => {
             <h1>Jardin Nubes de Algodon</h1>
             </div>
             <div>
+            <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
-            <a href="#">Nuestros Docentes</a>
+            <a href="#">Servicios</a>
             <a href="#">Instalaciones</a>
+            <a href="#">Matriculas</a>
             <a href="#">Contacto</a>
-            <a href="#">Redes Sociales</a>
             </div>
            
         </div>
