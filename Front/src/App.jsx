@@ -15,7 +15,7 @@ function App() {
       {/*<Jugamos />
       <Aulas />
       <Instalaciones />
-      <Footer />*/}
+  <Footer />*/}
      
     </div>
   )
