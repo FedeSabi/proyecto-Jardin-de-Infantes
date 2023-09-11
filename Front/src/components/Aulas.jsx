@@ -1,4 +1,4 @@
-import React from 'react'
+
 import  "./Aulas.css";
 
 const Aulas = () => {
