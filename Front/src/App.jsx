@@ -1,5 +1,4 @@
 
-import './App.css'
 import { Navbar } from './components/Navbar';
 import { Jugamos } from './components/Jugamos';
 import { Aulas } from "./components/Aulas";
