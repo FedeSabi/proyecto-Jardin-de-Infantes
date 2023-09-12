@@ -1,10 +1,5 @@
-
-
-
 const Aulas = () => {
-  return (
-    <div>Aulas</div>
-  )
-}
+    return <div>Aulas</div>;
+};
 
-export  { Aulas }
+export { Aulas };

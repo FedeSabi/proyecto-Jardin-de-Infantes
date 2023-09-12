@@ -1,19 +1,20 @@
-
-import { Navbar } from './components/Navbar';
-import { Jugamos } from './components/Jugamos';
-import { Aulas } from "./components/Aulas";
-import { Footer } from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Inicio } from "./pages/Inicio";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 function App() {
-
-  return (
-    <>
-      <Navbar />
-      <Jugamos />
-      <Aulas />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Inicio />} />
+                </Routes>
+                <Footer />
+            </Router>
+        </>
+    );
 }
 
-export default App
+export default App;
