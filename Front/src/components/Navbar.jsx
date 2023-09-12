@@ -27,7 +27,7 @@ const Navbar = () => {
                 <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
                     <div className="flex-10">
                         <ul className="flex gap-8 mr-16 text-[18px]">
-                            <NavLink to="/Contacto" text="Contacto" />
+                            <NavLink to="/contacto" text="Contacto" />
                             <NavLink to="/Inicio" text="Inicio" />
                             <NavLink to="/Instalaciones" text="Instalaciones" />
                             <NavLink to="/Matricula" text="Matricula" />
