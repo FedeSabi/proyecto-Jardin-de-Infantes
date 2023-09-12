@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './Navbar.css'
 import { Link as ScrollLink } from 'react-scroll'
 import { FaTimes, FaBars } from 'react-icons/fa'
 

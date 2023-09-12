@@ -1,5 +1,5 @@
 
-import  "./Aulas.css";
+
 
 const Aulas = () => {
   return (

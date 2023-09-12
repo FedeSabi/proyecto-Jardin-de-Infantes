@@ -1,4 +1,4 @@
-import './Jugamos.css'
+
 
 
 const Jugamos = () => {
