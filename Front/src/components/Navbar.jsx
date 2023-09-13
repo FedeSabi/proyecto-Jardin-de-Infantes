@@ -8,8 +8,8 @@ const NavLink = ({ to, text }) => (
         spy={true}
         smooth={true}
         to={to}
-        className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-f">
-        <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-f">
+        className="hover:text-red-600 transition text-bold-400">
+        <li className="hover:text-red-600 transition text-bold-400">
             {text}
         </li>
     </ScrollLink>
@@ -38,8 +38,8 @@ const Navbar = () => {
                 </div>
                 <div>
                     {click && (
-                        <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-gray-300 transition">
-                            <ul className="text-left text-xl p-20">
+                        <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-gray-300 transition ">
+                            <ul className="text-left text-xl p-20 ">
                             <NavLink to="Inicio" text="Inicio" />
                             <NavLink to="Nosotros" text="Nosotros" />
                             <NavLink to="/Servicios" text="Servicios" />
