@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1">
+            <div className="h-10vh flex justify-between z-50 text-black lg:py-5 px-20 py-4 flex-1">
                 <div className="flex items-center flex-1">
                     <span className="text-3xl font-bold">Logo</span>
                 </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
                 <div>
                     {click && (
-                        <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
+                        <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-blue-900 transition">
                             <ul className="text-center text-xl p-20">
                                 <NavLink to="/Contacto" text="Contacto" />
                                 <NavLink to="/Inicio" text="Inicio" />
