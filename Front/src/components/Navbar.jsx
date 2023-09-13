@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { FaTimes, FaBars } from "react-icons/fa";
+import { SiLinkedin,SiFacebook, SiInstagram  } from "react-icons/si";
 
 const NavLink = ({ to, text }) => (
     <ScrollLink
@@ -22,34 +23,39 @@ const Navbar = () => {
         <nav>
             <div className="h-10vh flex justify-between z-50 text-black lg:py-5 px-20 py-4 flex-1">
                 <div className="flex items-center flex-1">
-                    <span className="text-3xl font-bold">Logo</span>
+                    <span className="text-3xl font-bold">logo</span>
                 </div>
                 <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
                     <div className="flex-10">
                         <ul className="flex gap-8 mr-16 text-[18px]">
-                            <NavLink to="/Contacto" text="Contacto" />
-                            <NavLink to="/Inicio" text="Inicio" />
-                            <NavLink to="/Instalaciones" text="Instalaciones" />
-                            <NavLink to="/Matricula" text="Matricula" />
-                            <NavLink to="/Nosotros" text="Nosotros" />
+                            <NavLink to="Inicio" text="Inicio" />
+                            <NavLink to="Nosotros" text="Nosotros" />
                             <NavLink to="/Servicios" text="Servicios" />
+                            <NavLink to="/Instalaciones" text="Instalaciones" />
+                            <NavLink to="/Matriculas" text="Matriculas" />
+                            <NavLink to="/Contacto" text="Contacto" />
                         </ul>
                     </div>
                 </div>
                 <div>
                     {click && (
-                        <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-blue-900 transition">
-                            <ul className="text-center text-xl p-20">
-                                <NavLink to="/Contacto" text="Contacto" />
-                                <NavLink to="/Inicio" text="Inicio" />
-                                <NavLink
-                                    to="/Instalaciones"
-                                    text="Instalaciones"
-                                />
-                                <NavLink to="/Matricula" text="Matricula" />
-                                <NavLink to="/Nosotros" text="Nosotros" />
-                                <NavLink to="/Servicios" text="Servicios" />
+                        <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-gray-300 transition">
+                            <ul className="text-left text-xl p-20">
+                            <NavLink to="Inicio" text="Inicio" />
+                            <NavLink to="Nosotros" text="Nosotros" />
+                            <NavLink to="/Servicios" text="Servicios" />
+                            <NavLink to="/Instalaciones" text="Instalaciones" />
+                            <NavLink to="/Matriculas" text="Matriculas" />
+                            <NavLink to="/Contacto" text="Contacto" />
                             </ul>
+                            <div className="flex flex-col p-20 mb-2 justify-left gap-5 py-4">
+                                <h2 >Siguenos</h2>
+                            <div className="flex gap-5 text-3xl">
+                                <a href="http://"><SiLinkedin /></a>
+                                <a href="http://"><SiFacebook /></a>
+                                <a href="http://"><SiInstagram /></a>
+                            </div>
+                            </div>
                         </div>
                     )}
                 </div>
