@@ -5,4 +5,4 @@ const Instalaciones = () => {
   )
 }
 
-export default Instalaciones
+export { Instalaciones } 

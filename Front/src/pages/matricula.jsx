@@ -5,4 +5,4 @@ const Matricula = () => {
   )
 }
 
-export default Matricula
+export { Matricula } 
