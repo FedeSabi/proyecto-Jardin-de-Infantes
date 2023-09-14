@@ -1,8 +1,8 @@
 
-const matricula = () => {
+const Matricula = () => {
   return (
     <div>matricula</div>
   )
 }
 
-export default matricula
+export default Matricula
