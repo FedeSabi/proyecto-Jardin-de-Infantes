@@ -1,7 +1,7 @@
 
 const Escuela_de_padres = () => {
   return (
-    <div>Escuela_de_padres</div>
+    <div>Escuela de padres</div>
   )
 }
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { SiLinkedin,SiFacebook, SiInstagram  } from "react-icons/si";
-import Dropdown from "../pages/Drodown";
+import Dropdown from "../pages/Dropdown";
 
 const NavLink = ({ to, text }) => (
     <ScrollLink
@@ -29,12 +29,12 @@ const Navbar = () => {
                 <div className="bg-gray-300 lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
                     <div className="flex-10">
                         <ul className="flex gap-8 mr-16 text-[18px]">
-                            <NavLink to="/Contacto" text="Contacto" />
                             <NavLink to="/Inicio" text="Inicio" />
-                            <NavLink to="/Instalaciones" text="Instalaciones" />
-                            <NavLink to="/Matriculas" text="Matriculas" />
                             <NavLink to="/Nosotros" text="Nostros" />
                             <Dropdown to="/Servicios" text="Servicios" />
+                            <NavLink to="/Instalaciones" text="Instalaciones" />
+                            <NavLink to="/Matriculas" text="Matriculas" />
+                            <NavLink to="/Contacto" text="Contacto" />
                         </ul>
                     </div>
                 </div>
