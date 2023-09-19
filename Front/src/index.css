@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .line {
+        @apply h-[1px] w-full bg-[#EEEEEE] my-6 xl:hidden;
+    }
+
+    .footerLinks {
+        @apply text-[#7C858E] tracking-[0.08px] leading-6;
+    }
+}

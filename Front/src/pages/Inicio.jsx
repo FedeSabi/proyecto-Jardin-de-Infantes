@@ -1,5 +1,11 @@
+import { Ratings } from "../components/Ratings";
+
 const Inicio = () => {
-    return <div>Inicio</div>;
+    return (
+        <div>
+            <Ratings />
+        </div>
+    );
 };
 
 export { Inicio };
