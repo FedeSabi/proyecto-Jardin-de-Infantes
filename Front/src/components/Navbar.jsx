@@ -26,7 +26,7 @@ const Navbar = () => {
                 <div className="flex items-center flex-1">
                     <span className="text-xl font-bold">Nubes de algodón</span>
                 </div>
-                <div className="bg-gray-300 lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
+                <div className=" py-6 lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
                     <div className="flex-10">
                         <ul className="flex gap-8 mr-16 text-[18px]">
                             <NavLink to="/Inicio" text="Inicio" />
@@ -44,7 +44,7 @@ const Navbar = () => {
                             <ul className="text-left text-xl p-20 ">
                             <NavLink to="Inicio" text="Inicio" />
                             <NavLink to="Nosotros" text="Nosotros" />
-                            <NavLink to="/Servicios" text="Servicios" />
+                            <Dropdown className="text-xxxl  " to="/Servicios" text="Servicios" />
                             <NavLink to="/Instalaciones" text="Instalaciones" />
                             <NavLink to="/Matriculas" text="Matriculas" />
                             <NavLink to="/Contacto" text="Contacto" />
