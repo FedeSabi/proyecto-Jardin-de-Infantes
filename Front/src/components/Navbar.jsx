@@ -22,16 +22,16 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className="h-10vh flex justify-between z-50 text-black lg:py-5 px-20 py-4 flex-1">
+            <div className="bg-gray-100 opacity-90 border border-white flex items-center justify-between z-50 text-black lg:py-5 px-6 py-9 flex-1 rounded-3xl ">
                 <div className="flex items-center flex-1">
                     <span className="text-xl font-bold">Nubes de algodón</span>
                 </div>
                 <div className=" py-6 lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
                     <div className="flex-10">
-                        <ul className="flex gap-8 mr-16 text-[18px]">
+                        <ul className="flex gap-4 ml-auto text-[18px] text-blue-900">
                             <NavLink to="/Inicio" text="Inicio" />
-                            <NavLink to="/Nosotros" text="Nostros" />
-                            <Dropdown to="/Servicios" text="Servicios" />
+                            <NavLink to="/Nosotros" text="Nostros"  />
+                            <Dropdown to="/Servicios" text="Servicios"/>
                             <NavLink to="/Instalaciones" text="Instalaciones" />
                             <NavLink to="/Matriculas" text="Matriculas" />
                             <NavLink to="/Contacto" text="Contacto" />
@@ -44,7 +44,7 @@ const Navbar = () => {
                             <ul className="text-left text-xl p-20 ">
                             <NavLink to="Inicio" text="Inicio" />
                             <NavLink to="Nosotros" text="Nosotros" />
-                            <Dropdown className="text-xxxl  " to="/Servicios" text="Servicios" />
+                            <Dropdown to="/Servicios" text="Servicios" className="text-3xl" />
                             <NavLink to="/Instalaciones" text="Instalaciones" />
                             <NavLink to="/Matriculas" text="Matriculas" />
                             <NavLink to="/Contacto" text="Contacto" />
