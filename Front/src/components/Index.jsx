@@ -1,3 +1,5 @@
+import { FaRegMoneyBillAlt } from 'react-icons/fa'
+
 export { Navbar } from './Navbar'
 export { Inicio } from '../pages/Inicio'
 export { Instalaciones } from '../pages/Instalaciones'
@@ -14,3 +16,4 @@ export { Estimulacion_psicopedagogica } from '../pages/Estimulacion_psicopedagog
 export { EstimulacionTemprana} from '../pages/EstimulacionTemprana'
 export { Escuela_de_padres } from '../pages/Escuela_de_padres'
 export { Cocina } from '../pages/Cocina'
+export { Destacamos } from './Destacamos'

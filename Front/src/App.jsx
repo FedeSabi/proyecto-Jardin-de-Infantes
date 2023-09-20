@@ -7,7 +7,7 @@ import { Nosotros } from "./pages/Nosotros.jsx";
 import { Servicios } from "./pages/Servicios.jsx";
 import { Matricula } from "./pages/Matricula.jsx";
 import { Footer } from "./components/Footer.jsx";
-
+import { Destacamos } from "./components/Destacamos.jsx"
 
 const App = () => {
     return (
@@ -22,6 +22,7 @@ const App = () => {
                     <Route path="/Servicios" element={<Servicios />} />
                     <Route path="/Matricula" element={<Matricula />} />
                 </Routes>
+                <Destacamos />
                 <Footer />
             </Router>
         </>
