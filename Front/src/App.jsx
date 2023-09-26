@@ -8,6 +8,7 @@ import { Servicios } from "./pages/Servicios.jsx";
 import { Matricula } from "./pages/Matricula.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Destacamos } from "./components/Destacamos.jsx"
+import { NuestrosServicios } from "./components/NuestrosServicios.jsx";
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
                     <Route path="/Matricula" element={<Matricula />} />
                 </Routes>
                 <Destacamos />
+                <NuestrosServicios />
                 <Footer />
             </Router>
         </>
