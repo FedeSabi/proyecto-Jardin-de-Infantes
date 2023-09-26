@@ -20,7 +20,7 @@ const Inicio = () => {
         </div>
       </div>
       <div className="flex-1">
-        <img src={nenaSaltando} alt="nena" className="w-1/2 py-3 px-3 m-auto" />
+        <img src={nenaSaltando} alt="nena" className="w-1/2 pt-28 py-3 px-3 m-auto" />
       </div>
     </section>
   );

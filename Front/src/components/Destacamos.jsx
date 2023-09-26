@@ -1,14 +1,14 @@
 const Destacamos = () => {
   return (
     <>
-      <div className="flex flex-col">
+      <div className=" p-28 flex flex-col">
         <h1 className="my-10 mx-10 flex-justify-center items-start w-1/2 text-4xl">
           Destacamos por nuestra innovación en el ámbito del entretenimiento y
           en la mejora de los métodos de aprendizaje.
         </h1>
-        <div className="flex justify-center items-right h-screen">
+        <div className=" p-10 flex justify-center items-right h-screen">
           <div className="my-10 w-1/2 text-right">
-            <h2 className="text-lg">
+            <h2 className="text-2xl">
               Estamos comprometidos a transformar la educación infantil en una
               experiencia emocionante y enriquecedora. Creemos que el
               aprendizaje y la diversión van de la mano, y nuestra guardería es
