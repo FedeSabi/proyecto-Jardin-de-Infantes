@@ -5,7 +5,10 @@ const Footer = () => {
         <footer className="px-4 pb-4 xl:px-0 xl:pb-[80px]">
             <div className=" hidden xl:block h-[1px] w-full bg-[#EEEEEE] my-6"></div>
 
-            <div className=" xl:flex xl:gap-[168px] xl:py-[80px] max-w-screen-xl mx-auto">
+            <div className=" relative xl:flex xl:gap-[168px] xl:py-[80px] max-w-screen-xl mx-auto">
+                <button className=" bg-black absolute right-0 top-[200px] rounded-full h-[2rem] w-[2rem] flex items-center justify-center">
+                    <img src="/Alt Arrow Up.svg" alt="Alt Arrow Up" />
+                </button>
                 <div className=" xl:w-[353px]">
                     <h2 className=" text-2xl font-bold leading-8 mr-[202px] xl:mr-0">
                         Nubes de algodón
