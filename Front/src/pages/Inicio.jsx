@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import { Ratings } from "../components/Ratings";
-
-const Inicio = () => {
-    return (
-        <div>
-            <Ratings />
-        </div>
-    );
-=======
 import nenaSaltando from "../assets/home_img_hero.png";
 //import { SlArrowRightCircle } from "react-icons/sl";
 
@@ -34,7 +24,6 @@ const Inicio = () => {
       </div>
     </section>
   );
->>>>>>> Federico
 };
 
 export { Inicio };
