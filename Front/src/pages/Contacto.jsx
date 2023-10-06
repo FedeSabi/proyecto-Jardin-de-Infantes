@@ -5,4 +5,4 @@ const Contacto = () => {
   )
 }
 
-export default Contacto
+export { Contacto } 

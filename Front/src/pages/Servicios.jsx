@@ -5,4 +5,4 @@ const Servicios = () => {
   )
 }
 
-export default Servicios
+export { Servicios } 
