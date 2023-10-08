@@ -1,65 +1,122 @@
 import { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { FaTimes, FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const NavLink = ({ to, text }) => (
-    <ScrollLink
-        spy={true}
-        smooth={true}
-        to={to}
-        className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-f">
-        <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-f">
-            {text}
-        </li>
-    </ScrollLink>
-);
+export const Navbar = () => {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-const Navbar = () => {
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
 
     return (
-        <nav>
-            <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1">
-                <div className="flex items-center flex-1">
-                    <span className="text-3xl font-bold">Logo</span>
+        <div className="relative">
+            <nav className="lg:bg-opacity-10 lg:backdrop-blur-md lg:bg-gray-200 lg:rounded-xl lg:fixed lg:top-[55px] lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-[56.25rem] xl:w-[79.25rem] z-50">
+                <div className="flex justify-between items-center px-[31px] py-4">
+                    <Link to="/">
+                        <span className="font-bold leading-8 lg:text-2xl">
+                            Nubes de algodón
+                        </span>
+                    </Link>
+
+                    <ul className="hidden lg:flex items-center gap-4">
+                        <li>
+                            <Link className="font-medium" to="/">
+                                Inicio
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="text-white" to="/nosotros">
+                                Nosotros
+                            </Link>
+                        </li>
+                        <li
+                            className={`dropdown_menu flex items-center gap-[14.4px] cursor-pointer ${
+                                isDropdownOpen ? "open" : ""
+                            }`}
+                            onClick={toggleDropdown}>
+                            <span className="text-white">Servicios</span>
+                            <img src="/Arrow down.svg" alt="Arrow down" />
+                            {isDropdownOpen && (
+                                <ul className="dropdown_content lg:absolute lg:bg-white lg:p-4 lg:rounded-lg lg:top-[70px] lg:w-44 space-y-2">
+                                    <li>
+                                        <Link className="text-black" to="/cuna">
+                                            Cuna
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="text-black"
+                                            to="/jardín">
+                                            Jardín
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="text-black"
+                                            to="/estimulación psicopedagógica">
+                                            Estimulación psicopedagógica
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="text-black"
+                                            to="/estimulación temprana">
+                                            Estimulación temprana
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="text-black"
+                                            to="/talleres">
+                                            Talleres
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="text-black"
+                                            to="/escuela de padres">
+                                            Escuela de padres
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="text-black"
+                                            to="/cocina">
+                                            Cocina
+                                        </Link>
+                                    </li>
+                                </ul>
+                            )}
+                        </li>
+                        <li>
+                            <Link className="text-white" to="/instalaciones">
+                                Instalaciones
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="text-white" to="/admisión">
+                                Admisión
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="text-white" to="/galería">
+                                Galería
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="text-white" to="/contacto">
+                                Contacto
+                            </Link>
+                        </li>
+                    </ul>
+
+                    <button className="lg:hidden">
+                        <img src="/Hamburger.svg" alt="Hamburger icon" />
+                    </button>
                 </div>
-                <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
-                    <div className="flex-10">
-                        <ul className="flex gap-8 mr-16 text-[18px]">
-                            <NavLink to="/Contacto" text="Contacto" />
-                            <NavLink to="/Inicio" text="Inicio" />
-                            <NavLink to="/Instalaciones" text="Instalaciones" />
-                            <NavLink to="/Matricula" text="Matricula" />
-                            <NavLink to="/Nosotros" text="Nosotros" />
-                            <NavLink to="/Servicios" text="Servicios" />
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    {click && (
-                        <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
-                            <ul className="text-center text-xl p-20">
-                                <NavLink to="/Contacto" text="Contacto" />
-                                <NavLink to="/Inicio" text="Inicio" />
-                                <NavLink
-                                    to="/Instalaciones"
-                                    text="Instalaciones"
-                                />
-                                <NavLink to="/Matricula" text="Matricula" />
-                                <NavLink to="/Nosotros" text="Nosotros" />
-                                <NavLink to="/Servicios" text="Servicios" />
-                            </ul>
-                        </div>
-                    )}
-                </div>
-                <button
-                    className="block sm:hidden transition"
-                    onClick={handleClick}>
-                    {click ? <FaTimes /> : <FaBars />}
-                </button>
-            </div>
-        </nav>
+
+                <div className="h-[1px] w-full bg-[#EEEEEE] md:hidden"></div>
+            </nav>
+        </div>
     );
 };
-export { Navbar };

@@ -39,7 +39,7 @@ export const Methodologies = () => {
 
     return (
         <section className=" py-[184px]">
-            <div className=" max-w-screen-xl mx-auto">
+            <div className=" max-w-[75rem] mx-auto">
                 <h2 className=" xl:text-4xl xl:font-medium xl:leading-[48px] xl:tracking-[0.09px] xl:mr-[800px]">
                     Conoce nuestras metodologías
                 </h2>
@@ -49,7 +49,7 @@ export const Methodologies = () => {
                     occaecat cupidatat non proident, sunt in culpa qui officia
                 </p>
 
-                <div className=" max-w-screen-xl mx-auto mt-[120px]">
+                <div className=" max-w-[75rem] mx-auto mt-[120px]">
                     <Accordion
                         open={open === 1}
                         icon={<Icon id={1} open={open} />}>

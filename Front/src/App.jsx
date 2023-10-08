@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Inicio } from "./pages/Inicio";
-import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar.jsx";
+import { Inicio } from "./pages/Inicio.jsx";
+import { Footer } from "./components/Footer.jsx";
 
-function App() {
+const App = () => {
     return (
         <>
             <Router>
@@ -15,6 +15,6 @@ function App() {
             </Router>
         </>
     );
-}
+};
 
 export default App;

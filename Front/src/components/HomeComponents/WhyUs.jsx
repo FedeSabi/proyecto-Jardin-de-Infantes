@@ -1,7 +1,7 @@
 export const WhyUs = () => {
     return (
         <section className=" bg-[#F5F5F5] xl:py-[90px]">
-            <div className=" max-w-screen-xl mx-auto xl:flex xl:items-center xl:justify-center xl:gap-[6.94rem]">
+            <div className=" max-w-[75rem] mx-auto xl:flex xl:items-center xl:justify-center xl:gap-[6.94rem]">
                 <div className=" w-2/5">
                     <img className=" w-full" src="/boy.svg" alt="boy" />
                 </div>
