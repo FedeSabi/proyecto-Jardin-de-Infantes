@@ -7,6 +7,9 @@ module.exports = withMT({
             fontFamily: {
                 Epilogue: ["Epilogue", "sans-serif;"],
             },
+            backgroundImage: {
+                'discos': "url('../public/nosotros_discos.png')",
+            },
         },
     },
     plugins: [],
