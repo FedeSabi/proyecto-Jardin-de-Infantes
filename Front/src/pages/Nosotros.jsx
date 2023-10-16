@@ -67,8 +67,8 @@ const Nosotros =()=>{
                                         <img src={tutora1} className="w-[176px] h-[128px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.C.-</p>
                                     </span>
-                                    <span className="h-[48px] text-[36px] leading-[48px]"> Stephany Rodríguez</span>
-                                    <span class="transition group-open:rotate-180">
+                                    <span className="w-[650px] h-[48px] text-[36px] leading-[48px]"> Stephany Rodríguez</span>
+                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
@@ -85,8 +85,8 @@ const Nosotros =()=>{
                                         <img src={tutora2} className="w-[176px] h-[128px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.G.-</p>
                                     </span>
-                                    <span className="h-[48px] text-[36px] leading-[48px]"> Noemi Pérez</span>
-                                    <span class="transition group-open:rotate-180">
+                                    <span className="w-[650px] h-[48px] text-[36px] leading-[48px]"> Noemi Pérez</span>
+                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
@@ -103,8 +103,8 @@ const Nosotros =()=>{
                                         <img src={tutora3} className="w-[176px] h-[128px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.J.-</p>
                                     </span>
-                                    <span className="h-[48px] text-[36px] leading-[48px]"> Dafne Gómez</span>
-                                    <span class="transition group-open:rotate-180">
+                                    <span className="w-[650px] h-[48px] text-[36px] leading-[48px]"> Dafne Gómez</span>
+                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
@@ -121,8 +121,8 @@ const Nosotros =()=>{
                                         <img src={tutora4} className="w-[176px] h-[128px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.P.-</p>
                                     </span>
-                                    <span className="h-[48px] text-[36px] leading-[48px]"> Ivanna Morales</span>
-                                    <span class="transition group-open:rotate-180">
+                                    <span className="w-[650px] h-[48px] text-[36px] leading-[48px]"> Ivanna Morales</span>
+                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
@@ -139,8 +139,8 @@ const Nosotros =()=>{
                                         <img src={tutora5} className="w-[176px] h-[128px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.E.-</p>
                                     </span>
-                                    <span className="h-[48px] text-[36px] leading-[48px]"> Lucía Ramos</span>
-                                    <span class="transition group-open:rotate-180">
+                                    <span className="w-[650px] h-[48px] text-[36px] leading-[48px]"> Lucía Ramos</span>
+                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
