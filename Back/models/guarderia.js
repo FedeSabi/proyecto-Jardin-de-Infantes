@@ -12,4 +12,4 @@ let guarderiaSchema = new mongoose.Schema({
     
 })
 
-export default mongoose.model('guarderia', guarderiaSchema);
+export default mongoose.model('Guarderia', guarderiaSchema);

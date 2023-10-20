@@ -12,4 +12,4 @@ let cunaSchema = new mongoose.Schema({
     
 })
 
-export default mongoose.model('cuna', cunaSchema);
+export default mongoose.model('Cuna', cunaSchema);

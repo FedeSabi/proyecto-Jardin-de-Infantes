@@ -12,4 +12,4 @@ let jardinSchema = new mongoose.Schema({
     
 })
 
-export default mongoose.model('jardin', jardinSchema);
+export default mongoose.model('Jardin', jardinSchema);
