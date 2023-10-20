@@ -25,7 +25,7 @@ export const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link className="text-white" to="/nosotros">
+                            <Link className="text-white hover:text-black" to="/nosotros">
                                 Nosotros
                             </Link>
                         </li>
@@ -34,7 +34,7 @@ export const Navbar = () => {
                                 isDropdownOpen ? "open" : ""
                             }`}
                             onClick={toggleDropdown}>
-                            <span className="text-white">Servicios</span>
+                            <span className="text-white hover:text-black">Servicios</span>
                             <img src="/Arrow down.svg" alt="Arrow down" />
                             {isDropdownOpen && (
                                 <ul className="dropdown_content lg:absolute lg:bg-white lg:p-4 lg:rounded-lg lg:top-[70px] lg:w-44 space-y-2">
@@ -89,22 +89,22 @@ export const Navbar = () => {
                             )}
                         </li>
                         <li>
-                            <Link className="text-white" to="/instalaciones">
+                            <Link className="text-white hover:text-black" to="/instalaciones">
                                 Instalaciones
                             </Link>
                         </li>
                         <li>
-                            <Link className="text-white" to="/admisión">
+                            <Link className="text-white hover:text-black" to="/admisión">
                                 Admisión
                             </Link>
                         </li>
                         <li>
-                            <Link className="text-white" to="/galería">
+                            <Link className="text-white hover:text-black" to="/galería">
                                 Galería
                             </Link>
                         </li>
                         <li>
-                            <Link className="text-white" to="/contacto">
+                            <Link className="text-white hover:text-black" to="/contacto">
                                 Contacto
                             </Link>
                         </li>
