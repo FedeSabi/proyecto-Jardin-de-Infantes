@@ -38,7 +38,7 @@ export const Methodologies = () => {
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
     return (
-        <section className=" py-[184px]">
+        <section className=" pb-[184px]">
             <div className=" max-w-[75rem] mx-auto">
                 <h2 className=" xl:text-4xl xl:font-medium xl:leading-[48px] xl:tracking-[0.09px] xl:mr-[800px]">
                     Conoce nuestras metodologías
