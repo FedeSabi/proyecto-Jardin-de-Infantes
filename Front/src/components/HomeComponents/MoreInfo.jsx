@@ -1,6 +1,6 @@
 export const MoreInfo = () => {
     return (
-        <section className=" bg-[#F5F5F5]">
+        <section className=" bg-[#F5F5F5] overflow-hidden">
             <div className=" max-w-[75rem] mx-auto pb-[20.81rem] py-40 text-center">
                 <h2 className=" text-4xl leading-[3rem] tracking-[0.00563rem] mx-[250px]">
                     Elige la mejor y haz que tu hijo desarrolle su inteligencia.
@@ -19,6 +19,14 @@ export const MoreInfo = () => {
                         </div>
                     </button>
                 </div>
+            </div>
+
+            <div className=" relative">
+                <img
+                    className=" w-full -bottom-[200px] absolute z-50"
+                    src="/moreInfoWave.svg"
+                    alt="more info wave"
+                />
             </div>
         </section>
     );

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const ServiceCard = ({ imageSrc, title, ageRange }) => (
     <div className="relative rounded-2xl">
-        <img className="w-[384px] h-[368px]" src={imageSrc} alt={title} />
+        <img className=" w-full h-[368px]" src={imageSrc} alt={title} />
         <button className="bg-white text-black w-[90%] py-4 px-8 rounded-2xl absolute bottom-0 left-0 right-4 mx-auto mb-4 flex justify-between items-center">
             <div className="flex flex-col">
                 <span className="text-left text-2xl font-medium leading-[2rem] tracking-[0.00525rem]">
@@ -16,7 +16,7 @@ const ServiceCard = ({ imageSrc, title, ageRange }) => (
 );
 
 export const OurServices = () => (
-    <section className="mt-[320px] max-w-[75rem] mx-auto">
+    <section className=" mt-[20rem] max-w-[75rem] mx-auto">
         <div className="flex justify-center">
             <h2 className="text-4xl font-medium leading-[48px] tracking-[0.09px]">
                 Nuestros Servicios
@@ -28,7 +28,7 @@ export const OurServices = () => (
                 crecimiento integral de su hijo.
             </p>
         </div>
-        <div className="grid grid-cols-3 mt-[88px]">
+        <div className="grid grid-cols-3 mt-[88px] gap-8">
             <ServiceCard
                 imageSrc="/servicio_cuna.png"
                 title="Cuna"

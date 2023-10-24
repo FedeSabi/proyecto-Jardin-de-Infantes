@@ -35,11 +35,21 @@ export const Header = () => {
                 </div>
             </div>
 
-            <img
-                className=" absolute bottom-0 w-full"
-                src="/header_wave.svg"
-                alt="header wave"
-            />
+            <div className=" relative">
+                <img
+                    className=" absolute -bottom-28 w-full"
+                    src="/header_wave.svg"
+                    alt="header wave"
+                />
+
+                <button>
+                    <img
+                        className=" absolute -bottom-48 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                        src="/header arrow down.svg"
+                        alt="header arrow down"
+                    />
+                </button>
+            </div>
         </section>
     );
 };
