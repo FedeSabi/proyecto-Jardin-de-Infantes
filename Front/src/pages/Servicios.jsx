@@ -16,7 +16,7 @@ const Servicios =()=>{
                 <p>/</p>
                 <p className="text-[#7C858E]">Servicios</p>
             </div>
-            <h5 className="mx-[112px] max-w-[74rem] mb-[4rem]">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut</h5>
+            <h5 className="mx-auto max-w-[74rem] mb-[4rem]">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut</h5>
             <div className="flex gap-[1rem] flex-wrap mx-auto max-w-[74rem]">
                 <div className="w-[384px] h-[400px] bg-discos bg-cover bg-center rounded-2xl flex items-end justify-center">
                     <button className="w-[356px] h-[88px] bg-white rounded-2xl mb-[1rem] px-[2rem] flex items-center">
