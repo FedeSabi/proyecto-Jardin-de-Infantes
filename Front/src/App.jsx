@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar.jsx";
 import { Inicio } from "./pages/Inicio.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Nosotros } from "./pages/Nosotros.jsx";
+import { Servicios } from "./pages/Servicios.jsx";
 
 const App = () => {
     return (
@@ -14,6 +15,9 @@ const App = () => {
                 </Routes>
                 <Routes>
                     <Route path="/nosotros" element={<Nosotros />} />
+                </Routes>
+                <Routes>
+                    <Route path="/servicios" element={<Servicios />} />
                 </Routes>
                 <Footer />
             </Router>
