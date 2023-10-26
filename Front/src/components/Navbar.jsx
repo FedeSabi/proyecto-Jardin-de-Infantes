@@ -34,7 +34,7 @@ export const Navbar = () => {
                                 isDropdownOpen ? "open" : ""
                             }`}
                             onClick={toggleDropdown}>
-                            <span className="text-white hover:text-black">Servicios</span>
+                            <span className="text-white hover:text-black"><Link to="/servicios">Servicios</Link></span>
                             <img src="/Arrow down.svg" alt="Arrow down" />
                             {isDropdownOpen && (
                                 <ul className="dropdown_content lg:absolute lg:bg-white lg:p-4 lg:rounded-lg lg:top-[70px] lg:w-44 space-y-2">
