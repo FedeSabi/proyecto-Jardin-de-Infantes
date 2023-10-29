@@ -13,7 +13,7 @@ const Servicios =()=>{
                 </h1>
             </div>
             <div className="flex w-232 gap-6 mt-[1rem] mb-[4rem] mx-[112px] max-w-[74rem]">
-                <Link className="text-black font-medium" to="/">
+                <Link className="text-black font-medium hover:text-gray-300" to="/">
                     Home
                 </Link>
                 <p>/</p>
