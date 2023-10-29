@@ -44,6 +44,11 @@ export const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li>
+                                        <Link className="text-black" to="/guarderia">
+                                            Guardería
+                                        </Link>
+                                    </li>
+                                    <li>
                                         <Link
                                             className="text-black"
                                             to="/jardín">
@@ -106,6 +111,12 @@ export const Navbar = () => {
                         <li>
                             <Link className="text-white hover:text-black" to="/contacto">
                                 Contacto
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="text-white hover:text-black" to="/login">
+                                Login
+                                {/* hacer un IF, si no está logueado mostrar "Login", si ya está logueado mostrar la foto de perfil del usuario */} 
                             </Link>
                         </li>
                     </ul>
