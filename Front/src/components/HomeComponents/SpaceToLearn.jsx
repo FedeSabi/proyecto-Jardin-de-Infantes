@@ -1,6 +1,11 @@
 export const SpaceToLearn = () => {
     return (
-        <section className=" bg-[#EEE] mt-[9.5rem] py-[210px]">
+        <section className=" relative bg-[#EEE] mt-[18.5rem] py-[210px]">
+            <img
+                className=" absolute -top-24 w-full"
+                src="/space to learn.svg"
+                alt="space wave"
+            />
             <div className=" relative max-w-[75rem] mx-auto flex">
                 <div>
                     <h2 className=" text-4xl font-medium leading-[3rem] tracking-[0.00563rem] mr-[650px]">

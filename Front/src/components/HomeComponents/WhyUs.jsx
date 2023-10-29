@@ -2,15 +2,17 @@ export const WhyUs = () => {
   return (
     <section className=" bg-[#F5F5F5] xl:py-[90px]">
       <div className="  mx-auto max-w-[75rem] xl:flex xl:items-center xl:justify-center xl:gap-[6.94rem]">
-        <div className=" w-2/5">
+
+        <div className=" w-[613px;]">
           <img className=" w-full" src="/boy.svg" alt="boy" />
         </div>
-        <div className=" w-3/5">
-          <div className="  xl:flex xl:flex-col xl:gap-[1.5rem]">
-            <h2 className=" xl:mr-[300px] xl:text-4xl xl:font-medium xl:leading-[3rem] xl:tracking-[0.00563rem]">
+
+        <div className=" w-[592px]">
+          <div className=" xl:flex xl:flex-col xl:gap-[1.5rem]">
+            <h2 className=" xl:mr-[140px] xl:text-4xl xl:font-medium xl:leading-[3rem] xl:tracking-[0.00563rem]">
               ¿Por qué elegir Nubes de Algodón?
             </h2>
-            <p className=" xl:mr-[167px] xl:text-lg xl:leading-8 xl:tracking-[0.00625rem]">
+            <p className=" xl:text-lg xl:leading-8 xl:tracking-[0.00625rem]">
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
               aut fugit, sed quia consequuntur ma Excepteur sint occaecat
               cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -26,6 +28,7 @@ export const WhyUs = () => {
             </div>
           </button>
         </div>
+        
       </div>
     </section>
   );

@@ -36,6 +36,14 @@ export const Header = () => {
         src="/header_wave.svg"
         alt="header wave"
       />
+
+      <button>
+        <img
+          className=" absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 transform"
+          src="/button down.svg"
+          alt="button to services"
+        />
+      </button>
     </section>
   );
 };
