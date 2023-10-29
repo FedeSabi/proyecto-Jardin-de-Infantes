@@ -4,6 +4,7 @@ import { Inicio } from "./pages/Inicio.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Nosotros } from "./pages/Nosotros.jsx";
 import { Servicios } from "./pages/Servicios.jsx";
+import Guarderia from "./pages/Servicios_guarderia.jsx";
 
 const App = () => {
     return (
@@ -18,6 +19,9 @@ const App = () => {
                 </Routes>
                 <Routes>
                     <Route path="/servicios" element={<Servicios />} />
+                </Routes>
+                <Routes>
+                    <Route path="/servicios/guarderia" element={<Guarderia />} />
                 </Routes>
                 <Footer />
             </Router>
