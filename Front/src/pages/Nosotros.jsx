@@ -21,7 +21,7 @@ const Nosotros =()=>{
                 </h1>
             </div>
             <div className="flex w-232 gap-6 mt-[1rem] mx-[112px]">
-                <Link className="text-black font-medium" to="/">
+                <Link className="text-black font-medium hover:text-gray-300" to="/">
                     Home
                 </Link>
                 <p>/</p>
@@ -29,36 +29,36 @@ const Nosotros =()=>{
             </div>
             <p className="mt-[3rem] mx-[112px] max-w-[904px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime porro, nisi architecto reprehenderit deleniti excepturi nulla perferendis dicta voluptates unde consequuntur necessitatibus? Omnis placeat explicabo dicta doloremque qui quo vitae quae ab quos minima tempore, unde fuga odit reprehenderit dolorem consequuntur deserunt quod obcaecati! Vitae blanditiis aliquid quae fugit quo qui mollitia, in excepturi eveniet iste aperiam veritatis neque illo, voluptates accusamus reprehenderit eum veniam? Inventore est beatae ullam delectus magnam, aliquam quibusdam id corporis soluta.</p>
             <img src={ninios} alt="kids playing" className="my-[4rem] px-[112px] mx-auto" />
-            <p className="max-w-[74rem] ml-auto pl-[112px] mr-[112px] mb-[8rem] w-[704px] text-[20px] leading-[32px] font-normal">
+            <p className="max-w-[72rem] ml-auto pl-[112px] mr-[112px] mb-[8rem] w-[704px] text-[20px] leading-[32px] font-normal">
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non proident.
             </p>
-            <div className="flex flex-wrap justify-between max-w-[74rem] ml-[112px] mb-[8rem]">
+            <div className="flex flex-wrap justify-between max-w-[72rem] ml-[112px] mb-[8rem]">
                 <img src={mision_ninio} className="max-h-[528px]" alt="niño armando juguete" />
                 <div className="flex flex-col justify-center gap-[2rem] max-w-[592px]">
                     <h2 className="text-[36px] leading-[48px] font-[500]">Nuestra Misión</h2>
                     <p className="text-[20px] leading-[32px]">Es crear un entorno seguro, amoroso y estimulante donde cada niño pueda florecer. Nos comprometemos a proporcionar una educación temprana de calidad que fomente el crecimiento holístico de los pequeños. Alentando su curiosidad, creatividad y desarrollo socioemocional. Valoramos la individualidad de cada niño y trabajamos en estrecha colaboración con las familias para nutrir su potencial único. Estamos dedicados a ser un faro de aprendizaje y cuidado en la vida de cada niño que pasa por nuestras puertas.</p>
                 </div>
             </div>
-            <div className="max-w-[74rem] flex flex-wrap justify-between ml-[112px] mb-[8rem]">
+            <div className="max-w-[72rem] flex flex-wrap justify-between ml-[112px] mb-[8rem]">
                 <div className="flex flex-col justify-end gap-[2rem] max-w-[592px]">
                     <h2 className="text-[36px] leading-[48px] font-[500]">Nuestra Visión</h2>
                     <p className="text-[20px] leading-[32px]">Es ser reconocidos como líderes en la educación temprana y el cuidado infantil. Nos esforzamos por ser un espacio donde los niños encuentren inspiración, amor por el aprendizaje y confianza en sí mismos. Buscamos ser un recurso valioso para las familias, brindando apoyo, orientación y un ambiente en el que todos se sientan bienvenidos y valorados. Visualizamos un futuro en el que cada niño que ha pasado por nuestra guardería se convierta en un adulto seguro, compasivo y con una base sólida para el éxito en la vida.</p>
                 </div>
                 <img src={maestra} className="max-h-[528px]" alt="maestra enseñando" />
             </div>
-            <p className="max-w-[74rem]  h-[96px] text-[36px] leading-[48px] mx-[112px] mb-[8rem] ">Un espacio de aprendizaje y diversión para los pequeños de nuestra guardería</p>
-            <div className=" max-w[74rem] flex h-[542px] mx-[112px] mb-[5rem] relative">
+            <p className="max-w-[72rem]  h-[96px] text-[36px] leading-[48px] mx-[112px] mb-[8rem] ">Un espacio de aprendizaje y diversión para los pequeños de nuestra guardería</p>
+            <div className=" max-w[72rem] flex h-[542px] mx-[112px] mb-[5rem] relative">
                 <img src={ninios_casa} className="max-h-[504px] absolute bottom-0 left-0" alt="niños armando casa" />
                 <h5 className="absolute top-0 right-0 pl-[460.5px] z-10 text-[20px] leading-[32px]">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es.</h5>
                 <h5 className="absolute bottom-[20%] right-0 pl-[860px] z-10 text-[20px] leading-[32px]">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es.</h5>
             </div>
-            <div className="mx-[112px] max-w[74rem] flex justify-between flex-wrap items-center mb-[8rem]">
+            <div className="mx-[112px] max-w[72rem] flex justify-between flex-wrap items-center mb-[8rem]">
                 <h4 className="text-[24px] leading-[32px] max-w-[384px]">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</h4>
                 <img src={playground} className="max-w-[384px]" alt="jardin de juegos" />
                 <img src={juguetes} className="max-w-[384px]" alt="jueguetes" />
             </div>
             <h2 className="text-[36px] leading-[48px] ml-[112px]">Nuestras Tutoras</h2>
-            <div class="max-w-[74rem] px-auto min-h-screen">
+            <div class="max-w-[72rem] px-auto min-h-screen">
                     <div class="flex flex-col items-center">
                     </div>
                     <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
