@@ -38,17 +38,17 @@ export const Methodologies = () => {
 
   return (
     <section className=" pb-[184px]">
-      <div className=" mx-auto max-w-[75rem]">
+      <div className=" mx-auto max-w-[76rem]">
         <h2 className=" xl:mr-[800px] xl:text-4xl xl:font-medium xl:leading-[48px] xl:tracking-[0.09px]">
           Conoce nuestras metodologías
         </h2>
-        <p className=" xl:ml-[500px] xl:mt-4 xl:text-xl xl:leading-[32px] xl:tracking-[0.1px]">
+        <p className=" xl:ml-[450px] xl:mt-4 xl:text-xl xl:leading-[32px] xl:tracking-[0.1px]">
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur ma. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia
         </p>
 
-        <div className=" mx-auto mt-[120px] max-w-[75rem]">
+        <div className=" mx-auto mt-[120px] max-w-[76rem]">
           <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
             <AccordionHeader
               className=" text-4xl font-normal leading-[48px] tracking-[0.09] text-black"

@@ -1,7 +1,7 @@
 export const MoreInfo = () => {
   return (
     <section className=" overflow-hidden bg-[#F5F5F5]">
-      <div className=" mx-auto max-w-[75rem] py-40 pb-[20.81rem] text-center">
+      <div className=" mx-auto max-w-[76rem] py-40 pb-[20.81rem] text-center">
         <h2 className=" mx-[250px] text-4xl leading-[3rem] tracking-[0.00563rem]">
           Elige la mejor y haz que tu hijo desarrolle su inteligencia.
         </h2>

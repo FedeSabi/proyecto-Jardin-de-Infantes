@@ -11,7 +11,7 @@ export const Navbar = () => {
   return (
     <div className="relative">
       <nav className="z-50 lg:fixed lg:left-1/2 lg:top-[55px] lg:w-[56.25rem] lg:-translate-x-1/2 lg:-translate-y-1/2 lg:transform lg:rounded-xl lg:bg-gray-200 lg:bg-opacity-10 lg:backdrop-blur-md xl:w-[79.25rem]">
-        <div className="flex items-center justify-between px-[31px] py-4">
+        <div className="flex items-center justify-between px-[27px] py-4">
           <Link to="/">
             <span className="font-bold leading-8 lg:text-2xl">
               Nubes de algodón

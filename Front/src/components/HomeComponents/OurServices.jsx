@@ -16,7 +16,7 @@ const ServiceCard = ({ imageSrc, title, ageRange }) => (
 );
 
 export const OurServices = () => (
-  <section className=" mx-auto mt-[20rem] max-w-[75rem]">
+  <section className=" mx-auto mt-[20rem] max-w-[76rem]">
     <div className="flex justify-center">
       <h2 className="text-4xl font-medium leading-[48px] tracking-[0.09px]">
         Nuestros Servicios

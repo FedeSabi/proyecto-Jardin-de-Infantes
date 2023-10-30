@@ -1,6 +1,6 @@
 export const Numbers = () => {
     return (
-        <section className=" max-w-[75rem] mx-auto xl:flex xl:items-center xl:justify-between xl:mt-[184px] xl:mb-[171px]">
+        <section className=" max-w-[76rem] mx-auto xl:flex xl:items-center xl:justify-between xl:mt-[184px] xl:mb-[171px]">
             <div>
                 <span className=" text-[72px] font-semibold leading-[80px]">
                     250+

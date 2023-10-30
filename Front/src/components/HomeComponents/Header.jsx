@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
-    <section className=" relative bg-[#BFBFBF] pb-[100px]">
-      <div className=" mx-auto flex max-w-[75rem] gap-[55px]">
+    <header className=" relative bg-[#BFBFBF] pb-[100px]">
+      <div className=" mx-auto flex max-w-[76rem] gap-[55px]">
         <div className=" w-3/5">
           <h1 className=" mt-[208px] text-5xl font-medium leading-[56px] tracking-[0.12px]">
             Educación Temprana, cuidado y aprendizaje en un ambiente de alegría
@@ -44,6 +44,6 @@ export const Header = () => {
           alt="button to services"
         />
       </button>
-    </section>
+    </header>
   );
 };
