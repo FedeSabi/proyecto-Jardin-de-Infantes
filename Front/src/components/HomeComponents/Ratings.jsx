@@ -1,11 +1,11 @@
 export const Ratings = () => {
     return (
         <section className=" px-4 xl:px-0 pt-[80px] pb-[232px] xl:pb-[54px] mb-[184px] bg-[#F5F5F5] xl:text-center">
-            <div className=" max-w-screen-lg mx-auto z-10">
-                <h2 className=" text-[32px] font-semibold leading-[42px] tracking-[0.075px] text-center xl:mx-[260px]">
+            <div className=" max-w-[76rem] mx-auto z-10">
+                <h2 className=" text-[32px] font-semibold leading-[42px] tracking-[0.075px] text-center xl:mx-[350px]">
                     Lo que están diciendo los papás acerca de Nosotros
                 </h2>
-                <p className=" mt-8 text-lg leading-[32px] tracking-[0.09px] xl:mx-18">
+                <p className=" mt-8 text-lg leading-[32px] tracking-[0.09px] xl:mx-[150px]">
                     Quisque egestas ipsum vitae erat faucibus, non volutpat arcu
                     faucibus. Phasellus auctor sed ligula in bibendum. Maecenas
                     vel ultrices nulla. Aliquam nunc nulla, consectetur quis
