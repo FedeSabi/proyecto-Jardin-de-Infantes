@@ -87,7 +87,7 @@ export const Navbar = () => {
               )}
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/instalaciones">
+              <Link className="text-white hover:text-black" to="/facilities">
                 Instalaciones
               </Link>
             </li>
