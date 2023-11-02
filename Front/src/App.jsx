@@ -4,6 +4,9 @@ import { Home } from "./pages/Home.jsx";
 import { Facilities } from "./pages/Facilities.jsx";
 import { Admission } from "./pages/Admission.jsx";
 import { Footer } from "./components/Footer.jsx";
+import { Nosotros } from "./pages/Nosotros.jsx";
+import { Servicios } from "./pages/Servicios.jsx";
+import Guarderia from "./pages/Servicios_guarderia.jsx";
 
 const App = () => {
   return (
@@ -12,8 +15,11 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/servicios" element={<Servicios />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/admission" element={<Admission />} />
+          <Route path="/servicios/guarderia" element={<Guarderia />} />
         </Routes>
         <Footer />
       </Router>
