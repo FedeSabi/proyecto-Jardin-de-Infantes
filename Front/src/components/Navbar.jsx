@@ -86,7 +86,7 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-white" to="/admisión">
+              <Link className="text-white" to="/admission">
                 Admisión
               </Link>
             </li>
