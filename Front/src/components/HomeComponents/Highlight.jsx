@@ -1,7 +1,7 @@
 export const Highlight = () => {
     return (
-        <section className=" max-w-[75rem] mx-auto mt-[13.75rem]">
-            <p className=" lg:text-4xl lg:leading-[3rem] lg:tracking-[0.00563rem] lg:mr-[270px]">
+        <section className=" max-w-[76rem] mx-auto mt-[13.75rem]">
+            <p className=" lg:text-4xl lg:leading-[3rem] lg:tracking-[0.00563rem] lg:mr-[280px]">
                 Destacamos por nuestra innovación en el ámbito del
                 entretenimiento y en la mejora de los métodos de aprendizaje.
             </p>
