@@ -15,24 +15,28 @@ import { Link } from "react-router-dom";
 const Nosotros =()=>{
     return(
         <section className="overflow-x-hidden">
-            <div className="w-screen m-[0px] h-[376px] bg-discos bg-cover bg-center">
-                <h1 className="text-white px-[112px] pt-[160px] max-w-[1050px] h-[144px] text-[58px] leading-[72px] font-normal">
-                    Guardería infantil educativo desde Nubes de Algodón
-                </h1>
-            </div>
-            <div className="flex w-232 gap-6 mt-[1rem] mx-[112px]">
+            <header className="h-[376px] bg-discos bg-cover bg-center">
+                <div className="mx-auto flex h-72 max-w-[76rem] pb-[60px] pt-[172px]">
+                    <h1 className="ml-[112px] text-[58px] font-semibold leading-[72px] text-white">
+                        Guardería infantil educativo desde Nubes de Algodón
+                    </h1>
+                </div>
+            </header>
+            <div className="flex w-232 gap-6 mt-[40px] mx-auto px-[112px] max-w-[76rem]">
                 <Link className="text-black font-medium hover:text-gray-300" to="/">
                     Home
                 </Link>
                 <p>/</p>
                 <p className="text-[#7C858E]">Nosotros</p>
             </div>
-            <p className="mt-[3rem] mx-[112px] max-w-[904px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime porro, nisi architecto reprehenderit deleniti excepturi nulla perferendis dicta voluptates unde consequuntur necessitatibus? Omnis placeat explicabo dicta doloremque qui quo vitae quae ab quos minima tempore, unde fuga odit reprehenderit dolorem consequuntur deserunt quod obcaecati! Vitae blanditiis aliquid quae fugit quo qui mollitia, in excepturi eveniet iste aperiam veritatis neque illo, voluptates accusamus reprehenderit eum veniam? Inventore est beatae ullam delectus magnam, aliquam quibusdam id corporis soluta.</p>
-            <img src={ninios} alt="kids playing" className="my-[4rem] px-[112px] mx-auto" />
-            <p className="max-w-[72rem] ml-auto pl-[112px] mr-[112px] mb-[8rem] w-[704px] text-[20px] leading-[32px] font-normal">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non proident.
-            </p>
-            <div className="flex flex-wrap justify-between max-w-[72rem] ml-[112px] mb-[8rem]">
+            <p className="mt-[112px] mx-auto px-[112px] max-w-[76rem]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime porro, nisi architecto reprehenderit deleniti excepturi nulla perferendis dicta voluptates unde consequuntur necessitatibus? Omnis placeat explicabo dicta doloremque qui quo vitae quae ab quos minima tempore, unde fuga odit reprehenderit dolorem consequuntur deserunt quod obcaecati! Vitae blanditiis aliquid quae fugit quo qui mollitia, in excepturi eveniet iste aperiam veritatis neque illo, voluptates accusamus reprehenderit eum veniam? Inventore est beatae ullam delectus magnam, aliquam quibusdam id corporis soluta.</p>
+            <img src={ninios} alt="kids playing" className="mt-[56px] px-[112px] mx-auto max-w-[76rem]" />
+            <div className="max-w-[76rem] mx-[auto] mt-[64px] flex justify-end">
+                <p className="mr-[112px] text-[20px] leading-[32px] font-normal w-[592px] h-[96px]">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non proident.
+                </p>
+            </div>
+            <div className="flex flex-wrap justify-between max-w-[76rem] mx-auto mt-[144px]">
                 <img src={mision_ninio} className="max-h-[528px]" alt="niño armando juguete" />
                 <div className="flex flex-col justify-center gap-[2rem] max-w-[592px]">
                     <h2 className="text-[36px] leading-[48px] font-[500]">Nuestra Misión</h2>
