@@ -20,7 +20,7 @@ app.use(morgan('dev'))
 
 // rutas desde aspiranteRoutes.js
 app.use('/', userRoutes);
-app.use('/api',authRoutes)
+app.use('/',authRoutes)
 
 app.get('/', (req, res) => {
   console.log('Hola mundo');
