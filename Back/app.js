@@ -3,8 +3,8 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import db from './config/db.js';
 import userRoutes from './routes/aspiranteRoutes.js';
-
-
+import cookieParser from 'cookie-parser'
+//import authRoutes from './routes/auth.routes.js'
 
 //coneccion app y port
 const app = express();
@@ -14,9 +14,12 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(cookieParser())
+//app.use(morgan('dev'))
 
 // rutas desde aspiranteRoutes.js
 app.use('/', userRoutes);
+//app.use('/api',authRoutes)
 
 app.get('/', (req, res) => {
   console.log('Hola mundo');
@@ -30,3 +33,4 @@ app.listen(PORT, () => {
 });
 
 
+export default app
