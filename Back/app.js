@@ -5,7 +5,7 @@ import db from './config/db.js';
 import userRoutes from './routes/aspiranteRoutes.js';
 import cookieParser from 'cookie-parser'
 import morgan from 'morgan';
-//import authRoutes from './routes/auth.routes.js'
+import authRoutes from './routes/auth.routes.js'
 
 //coneccion app y port
 const app = express();
@@ -20,7 +20,7 @@ app.use(morgan('dev'))
 
 // rutas desde aspiranteRoutes.js
 app.use('/', userRoutes);
-//app.use('/api',authRoutes)
+app.use('/api',authRoutes)
 
 app.get('/', (req, res) => {
   console.log('Hola mundo');

@@ -6,9 +6,9 @@ import { TOKEN_SECRET } from "../config.js";
 
 // register
 export const register = async (req, res) => {
-  const { email, password, username } = req.body;
+  const { email, password, nombre } = req.body;
 
-  console.log(email, password, username);
+  console.log(email, password, nombre);
 
   try {
     const userFound = await User.findOne({ email });
@@ -18,7 +18,7 @@ export const register = async (req, res) => {
     const passwordHash = await bcrypt.hash(password, 10); //encryptamos el password
 
     const newUser = new User({
-      username,
+      nombre,
       email,
       password: passwordHash,
     });
@@ -29,7 +29,7 @@ export const register = async (req, res) => {
     res.cookie("token", token);
     res.json({
       id: userSaved._id,
-      username: userSaved.username,
+      nombre: userSaved.nombre,
       email: userSaved.email,
       createdAt: userSaved.createdAt,
       updatedAt: userSaved.updatedAt,
@@ -64,7 +64,7 @@ export const login = async (req, res) => {
       res.cookie("token", token);
       res.json({
           id: userFound._id,
-          username: userFound.username,
+          nombre: userFound.nombre,
           email: userFound.email,
           isAdmin, // Agregar isAdmin en la respuesta
           createdAt: userFound.createdAt,
