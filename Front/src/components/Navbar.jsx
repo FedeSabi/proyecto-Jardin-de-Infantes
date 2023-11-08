@@ -102,7 +102,7 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/contacto">
+              <Link className="text-white hover:text-black" to="/contact">
                 Contacto
               </Link>
             </li>
