@@ -1,0 +1,554 @@
+[33mcommit 7c8cc9836ac1e325ec101fc71063bd7f311c1328[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Wed Nov 15 20:56:07 2023 -0300
+
+    pestaña Login
+
+[33mcommit 5d0b24c1f2ecf66df7c53896355c095f809addc0[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Sun Nov 5 13:30:21 2023 -0300
+
+    Arreglos Nosotros
+
+[33mcommit 51ee1b4acd713fe9597de6b9fb1c54f104b60ff6[m
+Merge: 4de31d1 5796d40
+Author: Lcdiego <diegocolman78@hotmail.com>
+Date:   Fri Nov 3 14:41:03 2023 -0300
+
+    Merge branch 'master' of https://github.com/FedeSabi/proyecto-Jardin-de-Infantes
+
+[33mcommit 4de31d1b44f799067b2c31c8462162d3a764346f[m
+Merge: cb1bd85 08d1b14
+Author: Lcdiego <diegocolman78@hotmail.com>
+Date:   Fri Nov 3 14:40:26 2023 -0300
+
+    actualizacion del Back
+
+[33mcommit 08d1b14056e87504128817d7bd9201731b58666e[m
+Author: Lcdiego <diegocolman78@hotmail.com>
+Date:   Fri Nov 3 14:17:25 2023 -0300
+
+    cambios en el Back
+
+[33mcommit 5796d4027ce24ce8c36d26ad24137fb600d4d036[m
+Author: Federico Sabiche <fsabiche>
+Date:   Fri Nov 3 08:36:49 2023 -0300
+
+    1
+
+[33mcommit 9e78d5e1d12c7adf012cc022743f201882ab125f[m
+Author: miguel <miguelbranagan30@gmail.com>
+Date:   Mon Oct 30 22:52:21 2023 -0400
+
+    instalaciones added
+
+[33mcommit c4cb2e3d66aa490ca9dc05fe6b04688da366bdbf[m
+Author: miguel <miguelbranagan30@gmail.com>
+Date:   Mon Oct 30 22:19:06 2023 -0400
+
+    fixing navbar
+
+[33mcommit 510b7a67b6b063b540a543caf3133c77e5a99467[m
+Merge: cb1bd85 ccd7c55
+Author: Miguel Evangelista <54966988+Miguelaeb@users.noreply.github.com>
+Date:   Mon Oct 30 22:13:48 2023 -0400
+
+    Merge pull request #14 from FedeSabi/miguel
+    
+    Miguel
+
+[33mcommit ccd7c55728cadf597d1a8b242080fd9574685cfd[m
+Merge: d6e242e cb1bd85
+Author: Miguel Evangelista <54966988+Miguelaeb@users.noreply.github.com>
+Date:   Mon Oct 30 22:13:39 2023 -0400
+
+    Merge branch 'master' into miguel
+
+[33mcommit d6e242e5df465d0b77612ea2c3afbdf547f6ac54[m
+Author: miguel <miguelbranagan30@gmail.com>
+Date:   Mon Oct 30 20:42:11 2023 -0400
+
+    facilities header background
+
+[33mcommit 526d324ec90a18829b9691f6e17f94d5d9debbd7[m
+Author: miguel <miguelbranagan30@gmail.com>
+Date:   Sun Oct 29 21:34:23 2023 -0400
+
+    home max-w fixed and facilities page done
+
+[33mcommit 41d5134ff1081912d627ede479992e96342f226b[m
+Author: miguel <miguelbranagan30@gmail.com>
+Date:   Sun Oct 29 12:21:40 2023 -0400
+
+    facilities page
+
+[33mcommit cb1bd85a172562595d7315efb97809a44642d557[m
+Merge: 4f78fa0 f56fe13
+Author: Rodrigo Martin Arroyo <arroyo.rodrigo@outlook.com>
+Date:   Sun Oct 29 11:43:34 2023 -0300
+
+    Merge pull request #13 from FedeSabi/rodrigo
+    
+    progreso Guarderia
+
+[33mcommit f56fe1304fd7cd3d554bf5cf35e424c30bbdb54d[m[33m ([m[1;31morigin/rodrigo[m[33m, [m[1;32mrodrigo[m[33m)[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Sun Oct 29 11:40:14 2023 -0300
+
+    progreso Guarderia
+
+[33mcommit 4f78fa094d04ee5ecf8be17d064bdd34e7e0a89e[m
+Merge: ab00aa3 b8e9ed0
+Author: Rodrigo Martin Arroyo <arroyo.rodrigo@outlook.com>
+Date:   Sun Oct 29 10:50:37 2023 -0300
+
+    Merge pull request #12 from FedeSabi/rodrigo
+    
+    progreso Servicios
+
+[33mcommit b8e9ed0e8ed65814b67bb8f7a7ba88e0f76195c5[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Sun Oct 29 10:49:38 2023 -0300
+
+    progreso Servicios
+
+[33mcommit 46b24ce11f461fb11973aa8c9dc9369cad3b6fe5[m
+Merge: f98f35b 3e9dc31
+Author: miguel <miguelbranagan30@gmail.com>
+Date:   Sat Oct 28 21:49:08 2023 -0400
+
+    home page done
+
+[33mcommit ab00aa3ec53cda48a83bfa44100c17c1847cc379[m
+Merge: a0c0e1c f9155f3
+Author: Rodrigo Martin Arroyo <arroyo.rodrigo@outlook.com>
+Date:   Wed Oct 25 22:28:42 2023 -0300
+
+    Merge pull request #11 from FedeSabi/rodrigo
+    
+    Rodrigo
+
+[33mcommit f9155f383de3394285febaad181f741993de42ed[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Wed Oct 25 22:28:08 2023 -0300
+
+    progreso Servicios
+
+[33mcommit 53d75decd7478789c6c447b2835c11678f9854dc[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Wed Oct 25 22:25:09 2023 -0300
+
+    progreso Servicios
+
+[33mcommit f98f35b6abe7687642c8003c95ebbaab25389362[m
+Author: miguel <miguelbranagan30@gmail.com>
+Date:   Mon Oct 23 22:31:37 2023 -0400
+
+    tailwind plus prettier
+
+[33mcommit a0c0e1cf6c5c7208125711bb8ba1b50030c21bc1[m
+Merge: ebc26b1 3e9dc31
+Author: Miguel Evangelista <54966988+Miguelaeb@users.noreply.github.com>
+Date:   Mon Oct 23 22:29:13 2023 -0400
+
+    Merge pull request #10 from FedeSabi/miguel
+    
+    Miguel
+
+[33mcommit 3e9dc313b5d45aeac42f4de1ce190d33387522f2[m
+Author: miguel evangelista <miguelbranagan30@gmail.com>
+Date:   Mon Oct 23 22:19:37 2023 -0400
+
+     updating to new pc
+
+[33mcommit ebc26b14b2518cd1902a7208c84ddcd56e7c4c08[m
+Merge: 953b80c ad338fc
+Author: Rodrigo Martin Arroyo <arroyo.rodrigo@outlook.com>
+Date:   Thu Oct 19 23:32:02 2023 -0300
+
+    Merge pull request #9 from FedeSabi/rodrigo
+    
+    cambios Nosotros
+
+[33mcommit ad338fc6475464a18c2433677529f7822614cce7[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Thu Oct 19 23:31:06 2023 -0300
+
+    cambios Nosotros
+
+[33mcommit 953b80c5583ec7fddec1c3ff6e489c13ed7a6ad3[m
+Merge: c658dd5 db31ece
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Oct 19 22:02:09 2023 -0300
+
+    Merge branch 'master' of https://github.com/FedeSabi/proyecto-Jardin-de-Infantes
+
+[33mcommit c658dd51d1688e6a69e3d8ec75eef270dac2e1f6[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Oct 19 22:01:57 2023 -0300
+
+    conexion base de datos mongoDB atlas
+
+[33mcommit db31ece9a07f737f98e5643bf2d18794cc45fc35[m
+Merge: d61c972 2034629
+Author: Rodrigo Martin Arroyo <arroyo.rodrigo@outlook.com>
+Date:   Mon Oct 16 22:41:03 2023 -0300
+
+    Merge pull request #8 from FedeSabi/rodrigo
+    
+    modificaciones Nosotros
+
+[33mcommit 203462963edc5e160e4df6753e35f7802bcec080[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Mon Oct 16 22:40:17 2023 -0300
+
+    modificaciones Nosotros
+
+[33mcommit d61c972249f5a284fa530bd133a5e8a2cfff4d5d[m[33m ([m[1;31morigin/Diego[m[33m)[m
+Author: Lcdiego <diegocolman78@hotmail.com>
+Date:   Mon Oct 16 17:30:59 2023 -0300
+
+    Nuevo Back
+
+[33mcommit eed11cd9c1d39b908d51e6d6069e8a0a0516308d[m
+Merge: 5910296 7631711
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Oct 16 15:49:40 2023 -0300
+
+    Merge branch 'master' of https://github.com/FedeSabi/proyecto-Jardin-de-Infantes
+
+[33mcommit 5910296cad6630dc12e66cf27cde225ace70044a[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Oct 16 15:49:19 2023 -0300
+
+    borre todo
+
+[33mcommit b773bbc77876ab151a3a7ff30443321c3b41bf58[m
+Author: miguel evangelista <miguelbranagan30@gmail.com>
+Date:   Sun Oct 15 13:30:45 2023 -0400
+
+    to do a pull
+
+[33mcommit 76317115966ec5c660dec86323319b9b479dd330[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: a50f208 f7c3c3f
+Author: Rodrigo Martin Arroyo <arroyo.rodrigo@outlook.com>
+Date:   Sun Oct 15 12:17:34 2023 -0300
+
+    Merge pull request #7 from FedeSabi/rodrigo
+    
+    progreso Nosotros
+
+[33mcommit f7c3c3fa64811744d62b73eb55c4debcd7c366fc[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Sun Oct 15 12:14:14 2023 -0300
+
+    progreso Nosotros
+
+[33mcommit a50f2086bfcaba54ed5672621b73308ce345473c[m
+Merge: 3d2da29 85755a6
+Author: Rodrigo Martin Arroyo <arroyo.rodrigo@outlook.com>
+Date:   Wed Oct 11 23:41:51 2023 -0300
+
+    Merge pull request #6 from FedeSabi/rodrigo
+    
+    progreso Nosotros
+
+[33mcommit 85755a68ef1b96693d81c50a3e60d080a5c94280[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Wed Oct 11 23:41:07 2023 -0300
+
+    progreso Nosotros
+
+[33mcommit 3d2da29d02ac8f92423afc507580b3032c1e28c6[m
+Merge: 1b5b33e 943e1e4
+Author: Rodrigo Martin Arroyo <arroyo.rodrigo@outlook.com>
+Date:   Tue Oct 10 23:38:50 2023 -0300
+
+    Merge pull request #5 from FedeSabi/rodrigo
+    
+    progreso pag  Nosotros
+
+[33mcommit 943e1e46d36bf48f808ea01abf596fdfc7dd21ee[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Tue Oct 10 23:37:27 2023 -0300
+
+    progreso pag  Nosotros
+
+[33mcommit 1b5b33e14675fee5202f00e69a118d564ef707fc[m
+Merge: 877c376 15f7d2a
+Author: Rodrigo Martin Arroyo <arroyo.rodrigo@outlook.com>
+Date:   Mon Oct 9 23:25:48 2023 -0300
+
+    Merge pull request #4 from FedeSabi/rodrigo
+    
+    first commit Nosotros
+
+[33mcommit 15f7d2a53845547ba8e75b2d7bfb66569c810181[m
+Author: Rarroyo941 <arroyo.rodrigo@outlook.com>
+Date:   Mon Oct 9 23:24:25 2023 -0300
+
+    first commit Nosotros
+
+[33mcommit 877c3764d4391049ca181cb42bcf13366496a930[m
+Merge: 4b10ed3 58ea1af
+Author: Miguel Evangelista <54966988+Miguelaeb@users.noreply.github.com>
+Date:   Sun Oct 8 19:54:29 2023 -0400
+
+    Merge pull request #3 from FedeSabi/miguel
+    
+    Miguel
+
+[33mcommit 58ea1afc3a37ce4cd0c3b7fb49bb5000977e605b[m
+Merge: bc14c62 4b10ed3
+Author: miguel evangelista <miguelbranagan30@gmail.com>
+Date:   Sun Oct 8 19:44:03 2023 -0400
+
+    finishing homePage
+
+[33mcommit bc14c62248d9c64c56af0ea923ae347c12f26e44[m
+Author: miguel evangelista <miguelbranagan30@gmail.com>
+Date:   Thu Oct 5 21:28:53 2023 -0400
+
+    adding docs
+
+[33mcommit 4b10ed388fc8de9a60d4e2037550277498288885[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Oct 5 22:01:15 2023 -0300
+
+    acomode los archivos de inicio.jsx
+
+[33mcommit cc1f181e3df495f3b3aeb46ef0ffe37adf1b9ee2[m
+Merge: 46bcad0 15e63ec
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Oct 5 21:53:32 2023 -0300
+
+    subi rama Federico
+
+[33mcommit 15e63eccfc4fbd3b5a9a834ff05642e6492ed381[m[33m ([m[1;31morigin/Federico[m[33m)[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Oct 5 19:22:25 2023 -0300
+
+    modificaciones varias
+
+[33mcommit 282fb1405477d881bd44144cb0a7e5531e17eaa8[m
+Author: Federico Sabiche <fsabiche>
+Date:   Tue Sep 26 20:15:35 2023 -0300
+
+    se modifico cards servicios
+
+[33mcommit abd492548ae11bf37b054302ad0b7438124b569d[m
+Author: Federico Sabiche <fsabiche>
+Date:   Tue Sep 26 19:45:53 2023 -0300
+
+    se creo seccion nuestros servicios
+
+[33mcommit 8752e89131a5ba4fea1f86e5343d7cdd3165780c[m
+Author: Federico Sabiche <fsabiche>
+Date:   Tue Sep 26 16:56:52 2023 -0300
+
+    se modifico section inicio
+
+[33mcommit 2465a50fa422e3c76030b0021b14047bae9de11d[m
+Author: Federico Sabiche <fsabiche>
+Date:   Wed Sep 20 15:44:19 2023 -0300
+
+    componente destacamos
+
+[33mcommit 9533723460b54ab4a98b2b0458a5bb014df1d9f6[m
+Author: Federico Sabiche <fsabiche>
+Date:   Tue Sep 19 21:15:36 2023 -0300
+
+    diseño componente Inicio
+
+[33mcommit c89c108896ae0143e9b89c52bbdfa8110c780b53[m
+Author: Federico Sabiche <fsabiche>
+Date:   Tue Sep 19 15:13:12 2023 -0300
+
+    se modifico el navbar y se agrego dropdown en menu burger
+
+[33mcommit 46bcad053776d43b1603dc56dcd534e70f680d3c[m
+Merge: 90142a0 dc1b888
+Author: Miguel Evangelista <54966988+Miguelaeb@users.noreply.github.com>
+Date:   Tue Sep 19 00:28:55 2023 -0400
+
+    Merge pull request #2 from FedeSabi/miguel
+    
+    fixing ratings and footer componets
+
+[33mcommit dc1b8887cde2622a7ef1893a4ac5514c3e551fe5[m
+Author: miguel evangelista <miguelbranagan30@gmail.com>
+Date:   Tue Sep 19 00:19:22 2023 -0400
+
+    fixing ratings and footer componets
+
+[33mcommit 4baf69ad856605e22d290174a2a4376b11d43afc[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 18 22:01:04 2023 -0300
+
+    se modifico dropdown, falta agregar a menu burger dorpdown
+
+[33mcommit 33a2b57c3501b5b7159647a8419cce0935773e13[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 18 21:09:20 2023 -0300
+
+    navbar con dropdown
+
+[33mcommit 117bb3033e9a1c73319aaa6cdc471e25090e49ad[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Sep 14 19:38:35 2023 -0300
+
+    bg navbar
+
+[33mcommit 3bb06724e11e987d93d97c54f58b7d27ceb83ca7[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Sep 14 19:29:50 2023 -0300
+
+    se agregaron las paths a el navbar
+
+[33mcommit 67e9e010384c53272d7888642aec314e7fe403b8[m
+Author: Federico Sabiche <fsabiche>
+Date:   Wed Sep 13 22:18:54 2023 -0300
+
+    crecacion de routes
+
+[33mcommit 2327d24a02618add2366b77f60f1c1c39eab1102[m
+Author: Federico Sabiche <fsabiche>
+Date:   Wed Sep 13 20:51:34 2023 -0300
+
+    se modifico navbar
+
+[33mcommit 26f96fc7b462dffee3aa1a011a1cbe4843083681[m
+Merge: 08476fa 8c93c14
+Author: Federico Sabiche <fsabiche>
+Date:   Wed Sep 13 19:33:39 2023 -0300
+
+    Merge branch 'Federico' of https://github.com/FedeSabi/proyecto-Jardin-de-Infantes into Federico
+
+[33mcommit 08476fa664c737f4439e6fe2b1246b86191a6f6c[m
+Author: Federico Sabiche <fsabiche>
+Date:   Wed Sep 13 19:32:26 2023 -0300
+
+    Narbar solucionado
+
+[33mcommit d120fdb369cd5850f9b21124df1019522af8929b[m
+Author: Federico Sabiche <fsabiche>
+Date:   Wed Sep 13 17:05:42 2023 -0300
+
+    modificamos el Navbar
+
+[33mcommit 8c93c14f5eca8b0bf3e7263fe6ceed64eb3cdf49[m
+Author: Federico Sabiche <fsabiche>
+Date:   Tue Sep 12 08:59:42 2023 -0300
+
+    creamos una nueva Branch de Federico
+
+[33mcommit 90142a05a9eed2631119a0645d53d91411e8b10e[m
+Author: miguel evangelista <miguelbranagan30@gmail.com>
+Date:   Mon Sep 11 23:16:50 2023 -0400
+
+    Agregue el index.css al main.jsx, por eso era que no funcionaba, modifique el archivo main.jsx y puse las rutas en el archivo App.jsx agregue el footer tengo que agregarle el codgo que tenia hecho ya, eso lo subiere a mi branch, tambien agregue la fuente que estaremos usando a todo el body, asi no tendremos que llamar la fuente una y otra vez
+
+[33mcommit f38b0abf9f2da4aaa8195cecd5d547d1bbd1ca36[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 11 22:48:56 2023 -0300
+
+    modificaciones
+
+[33mcommit 9ace5391bc26e5b1191c219cb60d9d4ccb125f74[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 11 22:44:29 2023 -0300
+
+    se modifico archivos duplicados de la carpeta front
+
+[33mcommit 793f979ec639bfad2092689d9e43f4480127f00c[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 11 22:33:39 2023 -0300
+
+    eliminacion de archivos
+
+[33mcommit 1cda6a9917b50fa38e23a2ace8e1fc67a853131e[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 11 22:12:54 2023 -0300
+
+    elimine app.ccs
+
+[33mcommit b15c9ab1b1e1492b454b6bed9029b5d8924cc7cb[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 11 21:12:04 2023 -0300
+
+    eliminamos las carpetas con archivos .css del master
+
+[33mcommit 4cfa3c6c45899d17d2a7f284079f68ff4579e23c[m
+Merge: 3260eb4 be49a71
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 11 21:05:13 2023 -0300
+
+    Merge branch 'master' of https://github.com/FedeSabi/proyecto-jardin-de-infantes
+
+[33mcommit 3260eb4d51258e33e7d3195ce17092255c747f19[m
+Merge: d3c6fd8 5f61f98
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 11 21:04:59 2023 -0300
+
+    se paso el branch Federico a la branch master
+
+[33mcommit 5f61f98b9532b38c338539207eceaeba40f44a65[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 11 20:59:29 2023 -0300
+
+    modificacion de carpeta components
+
+[33mcommit deb0fe389b44488c51627d2f5d9d23ae4f582201[m
+Author: Federico Sabiche <fsabiche>
+Date:   Mon Sep 11 20:11:45 2023 -0300
+
+    agregamos carpeta de pages
+
+[33mcommit be49a715a24100bec1057d9011eac4264628cb2d[m
+Author: Federico Sabiche <117692619+FedeSabi@users.noreply.github.com>
+Date:   Fri Sep 8 13:37:56 2023 -0300
+
+    Create README.md
+
+[33mcommit 1c386eaec0a3ff7e92d7c25b8b566017319055b5[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Sep 7 23:11:57 2023 -0300
+
+    ver buggs en funcion flecha
+
+[33mcommit 1a8b82f58c5c5862df9cfa9c369c92a56a67b7fd[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Sep 7 23:01:32 2023 -0300
+
+    modificacion de Navbar con props y menos codigo
+
+[33mcommit c58f3ee3aba57fdc9b153f0adcf08c7bae7b1788[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Sep 7 19:22:24 2023 -0300
+
+    navbar con menu burguer
+
+[33mcommit 55f9d56fa4992914492f5de56af65ffbe2a2f142[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Sep 7 14:10:01 2023 -0300
+
+    modificacion de navbar
+
+[33mcommit d3c6fd8412892380d38dc7c53bdf6eea56e32eee[m
+Author: Federico Sabiche <fsabiche>
+Date:   Thu Sep 7 11:39:56 2023 -0300
+
+    modificacion Navbar
+
+[33mcommit 3e39030a55c75bdcb5351e6641d97b060695c735[m
+Author: HELEOZ <leonardojosezavala.2@outlook.com>
+Date:   Mon Aug 28 17:04:02 2023 -0600
+
+    Agregando Back
+
+[33mcommit 07779992deafd2c1977b2027ccc037b476835c8e[m
+Merge: dff33b9 be5f3d4
+Author: Federico Sabiche <fsabiche>
+Date:   Fri Aug 25 22:40:51 2023 -0300
+
+    Merge branch 'master' of https://github.com/FedeSabi/proyecto-jardin-de-infantes
