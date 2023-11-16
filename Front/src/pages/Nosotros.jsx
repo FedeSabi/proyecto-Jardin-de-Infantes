@@ -1,14 +1,3 @@
-import ninios from "../../public/nosotros_ninios.png";
-import mision_ninio from "../../public/nosotros_mision_ninio.png"
-import maestra from "../../public/nosotros_maestra.png"
-import ninios_casa from "../../public/nosotros_ninio_armando_casa.png"
-import playground from "../../public/nosotros_jardin_playground.png"
-import juguetes from "../../public/nosotros_juguetes.png"
-import tutora1 from "../../public/nosotros_tutora1.png"
-import tutora2 from "../../public/nosotros_tutora2.png"
-import tutora3 from "../../public/nosotros_tutora3.png"
-import tutora4 from "../../public/nosotros_tutora4.png"
-import tutora5 from "../../public/nosotros_tutora5.png"
 import { Link } from "react-router-dom";
 
 
@@ -142,7 +131,7 @@ const Nosotros =()=>{
                             <details class="group">
                                 <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
                                     <span className="relative">
-                                        <img src={tutora5} className="w-[176px]" alt="tutora"/>
+                                        <img src="/nosotros_tutora5.png" className="w-[176px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.E.-</p>
                                     </span>
                                     <span className="h-[48px] text-[36px] leading-[48px]"> Lucía Ramos</span>
