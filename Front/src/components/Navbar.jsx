@@ -113,12 +113,11 @@ export const Navbar = () => {
               </Link>
             </li>
           </ul>
+          
           <button className="lg:hidden">
             <img src="/Hamburger.svg" alt="Hamburger icon" />
           </button>
         </div>
-
-        <div className="h-[1px] w-full bg-[#EEEEEE] md:hidden"></div>
       </nav>
     </div>
   );

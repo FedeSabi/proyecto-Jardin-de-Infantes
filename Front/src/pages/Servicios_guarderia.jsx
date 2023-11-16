@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import {AiOutlineArrowLeft} from "react-icons/ai"
-import guarderia from "../../public/servicio_guarderia.png"
 const Guarderia =()=>{
     return(
         <section className="overflow-x-hidden">
@@ -31,7 +30,7 @@ const Guarderia =()=>{
                     <p className="text-[20px] leading-[32px] font-medium">Horario Extendido: hasta las 6:30pm.</p>
                 </div>
                 <div className="relative rounded-4xl max-h-[504px]">
-                    <img src={guarderia} className="max-h-[504px]" alt="niño jugando"/>
+                    <img src="/servicio_guarderia.png" className="max-h-[504px]" alt="niño jugando"/>
                     <h6 className="absolute bottom-0 right-[1rem] w-[210px] h-[64px] text-[18px] leading-[32px]">"Un lugar de confianza, con clima de hogar".</h6>
                 </div>
             </div>
