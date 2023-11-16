@@ -6,6 +6,7 @@ import { Nosotros } from "./pages/Nosotros.jsx";
 import { Servicios } from "./pages/Servicios.jsx";
 import { Facilities } from "./pages/Facilities.jsx";
 import Guarderia from "./pages/Servicios_guarderia.jsx";
+import Login from "./pages/Login.jsx";
 
 const App = () => {
   return (
