@@ -92,7 +92,7 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/admisión">
+              <Link className="text-white hover:text-black" to="/admission">
                 Admisión
               </Link>
             </li>
@@ -102,7 +102,7 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/contacto">
+              <Link className="text-white hover:text-black" to="/contact">
                 Contacto
               </Link>
             </li>
@@ -113,6 +113,10 @@ export const Navbar = () => {
               </Link>
             </li>
           </ul>
+          
+          <button className="lg:hidden">
+            <img src="/Hamburger.svg" alt="Hamburger icon" />
+          </button>
         </div>
       </nav>
     </div>
