@@ -8,7 +8,7 @@ import { Facilities } from "./pages/Facilities.jsx";
 import { Admission } from "./pages/Admission.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import Guarderia from "./pages/Servicios_guarderia.jsx";
-import Login from "./pages/Login.jsx";
+import { Login } from "./pages/Login.jsx";
 
 const App = () => {
   return (
