@@ -1,6 +1,6 @@
-{/*import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Login =()=> {
+export const Login =()=> {
     return(
         <>
             <header className="h-[376px] bg-discos bg-cover bg-center">
@@ -38,4 +38,3 @@ const Login =()=> {
         </>
     )
 }
-export default Login */}
