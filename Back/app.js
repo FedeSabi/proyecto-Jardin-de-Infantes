@@ -4,13 +4,8 @@ import cors from 'cors';
 import db from './config/db.js';
 import userRoutes from './routes/aspiranteRoutes.js';
 
-
-
 //coneccion app y port
 const app = express();
-
-
-
 
 app.use(bodyParser.json());
 app.use(cors());
