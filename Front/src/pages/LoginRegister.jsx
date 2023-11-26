@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Login from '../components/LoginComponents/Login.jsx';
 import Signup from '../components/LoginComponents/Signup.jsx';
 
 export const LoginRegister = () => {
+  const [showLogin, setShowLogin] = useState(true);
+
+  const toggleComponent = () => {
+    setShowLogin(!showLogin);
+  };
   return (
     <>
       <header className="h-[376px] bg-discos bg-cover bg-center">
@@ -12,8 +17,7 @@ export const LoginRegister = () => {
           </h1>
         </div>
       </header>
-      <Login/>
-      <Signup/>
+      {showLogin ? <Login /> : <Signup />}
     </>
   );
 };
