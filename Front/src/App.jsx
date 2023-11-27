@@ -8,7 +8,8 @@ import { Facilities } from "./pages/Facilities.jsx";
 import { Admission } from "./pages/Admission.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import Guarderia from "./pages/Servicios_guarderia.jsx";
-import { LoginRegister } from "./pages/LoginRegister.jsx";
+import { Login } from "./pages/Login.jsx";
+import { Signup } from "./pages/Signup.jsx";
 
 const App = () => {
   return (
@@ -23,7 +24,8 @@ const App = () => {
           <Route path="/admission" element={<Admission />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/servicios/guarderia" element={<Guarderia />} />
-          <Route path="/login" element={<LoginRegister />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/registro" element={<Signup />} />
         </Routes>
         <Footer />
       </Router>

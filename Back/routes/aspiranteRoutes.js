@@ -5,8 +5,7 @@ import { createUser,getUsersByNivel,updateUserDetails ,deleteUser} from '../cont
 const router = express.Router();
 
 
-
-router.post('/crear/usuarios', createUser);
+router.post('/registro', createUser);
 
 router.get('/usuarios/:nivel', getUsersByNivel);
 
