@@ -1,17 +1,19 @@
 import User from '../models/User.js'
 // creacion de los usuarios de todos los niveles
+
+
 export const createUser = async (req, res) => {
   try {
-    const { nombre, apellido,genero, nacimiento, nivel , nombreYapellido, telefono,email } = req.body;
+    const { nombre, apellido, genero, nacimiento, nivel, telefono, email,password } = req.body;
     const newUser = new User({
       nombre,
       apellido,
       genero,
       nacimiento,
       nivel,
-      nombreYapellido,
       telefono,
       email,
+      password
     });
     const savedUser = await newUser.save();
     res.json(savedUser);

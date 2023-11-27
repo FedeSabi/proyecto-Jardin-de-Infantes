@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import db from './config/db.js';
 import userRoutes from './routes/aspiranteRoutes.js';
+import User from './models/User.js';
 
 //coneccion app y port
 const app = express();
@@ -17,6 +18,8 @@ app.get('/', (req, res) => {
   console.log('Hola mundo');
   res.send('Hola mundo');
 });
+
+
 
 const PORT = process.env.PORT || 3000;
 
