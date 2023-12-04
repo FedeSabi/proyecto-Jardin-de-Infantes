@@ -51,96 +51,96 @@ const Nosotros =()=>{
                 <img src="/nosotros_juguetes.png" className="max-w-[384px]" alt="jueguetes" />
             </div>
             <h2 className="text-[36px] leading-[48px] ml-[112px]">Nuestras Tutoras</h2>
-            <div class="max-w-[72rem] px-auto min-h-screen">
-                    <div class="flex flex-col items-center">
+            <div className="max-w-[72rem] px-auto min-h-screen">
+                    <div className="flex flex-col items-center">
                     </div>
-                    <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
-                        <div class="py-5 w-[1008px]">
-                            <details class="group">
-                                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                    <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+                        <div className="py-5 w-[1008px]">
+                            <details className="group">
+                                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                     <span className="relative">
                                         <img src="/nosotros_tutora1.png" className="w-[176px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.C.-</p>
                                     </span>
                                     <span className="h-[48px] text-[36px] leading-[48px]"> Stephany Rodríguez</span>
-                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
+                                    <span className="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
                                 </summary>
-                                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                                     Lorem ipsum dolor sit amet.
                                 </p>
                             </details>
                         </div>
-                        <div class="py-5">
-                            <details class="group">
-                                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <div className="py-5">
+                            <details className="group">
+                                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                     <span className="relative">
                                         <img src="/nosotros_tutora2.png" className="w-[176px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.G.-</p>
                                     </span>
                                     <span className="h-[48px] text-[36px] leading-[48px]"> Noemi Pérez</span>
-                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
+                                    <span className="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
                                 </summary>
-                                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                                     Lorem ipsum dolor sit amet.
                                 </p>
                             </details>
                         </div>
-                        <div class="py-5">
-                            <details class="group">
-                                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <div className="py-5">
+                            <details className="group">
+                                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                     <span className="relative">
                                         <img src="/nosotros_tutora3.png" className="w-[176px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.J.-</p>
                                     </span>
                                     <span className="h-[48px] text-[36px] leading-[48px]"> Dafne Gómez</span>
-                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
+                                    <span className="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
                                 </summary>
-                                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                                     Lorem ipsum dolor sit amet.
                                 </p>
                             </details>
                         </div>
-                        <div class="py-5">
-                            <details class="group">
-                                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <div className="py-5">
+                            <details className="group">
+                                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                     <span className="relative">
                                         <img src="/nosotros_tutora4.png" className="w-[176px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.P.-</p>
                                     </span>
                                     <span className="h-[48px] text-[36px] leading-[48px]"> Ivanna Morales</span>
-                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
+                                    <span className="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
                                 </summary>
-                                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                                     Lorem ipsum dolor sit amet.
                                 </p>
                             </details>
                         </div>
-                        <div class="py-5">
-                            <details class="group">
-                                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                        <div className="py-5">
+                            <details className="group">
+                                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                     <span className="relative">
                                         <img src="/nosotros_tutora5.png" className="w-[176px]" alt="tutora"/>
                                         <p className="absolute bottom-0 right-0">A.E.-</p>
                                     </span>
                                     <span className="h-[48px] text-[36px] leading-[48px]"> Lucía Ramos</span>
-                                    <span class="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
+                                    <span className="transition group-open:rotate-180 border border-black border-solid p-4 rounded-full hover:bg-[#D9D9D9]">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                         </svg>
                                     </span>
                                 </summary>
-                                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                                     Lorem ipsum dolor sit amet.
                                 </p>
                             </details>
