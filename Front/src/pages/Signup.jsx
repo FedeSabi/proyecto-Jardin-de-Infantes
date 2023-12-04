@@ -3,23 +3,33 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export const Signup = () => {
-    const [error, setError] = useState('');
-  const [nombre, setNombre] = useState('');
-  const [apellido, setApellido] = useState('');
-  const [genero, setGenero] = useState('');
-  const [nacimiento, setNacimiento] = useState('');
-  const [nivel, setNivel] = useState('');
-  const [telefono, setTelefono] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
 
-  const handleSubmit =(e)=>{
-    e.preventDefault();
-    axios.post('http://localhost:5173/registro', {nombre,apellido,genero,nacimiento,nivel,telefono,email,password})
-    .then(result => console.log(result))
-    .catch(err => console.log(err))
-  }
+    const [formData, setFormData] = useState({
+        nombre: '',
+        apellido: '',
+        genero: '',
+        nacimiento: '',
+        nivel:'',
+        telefono:'',
+        email:'',
+        password:''
+    });
   
+    const handleInputChange = (e) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value
+      });
+    };
+  const handleFormSubmit  = async (e) =>{
+    e.preventDefault();
+    try {
+        const response = await axios.post('http://localhost:5173/registro', formData);
+        console.log(response.data);
+    } catch (error) {
+        console.error('Error en el registro:', error.response ? error.response.data : error.message);
+      }
+  }
   return (
     <>
       <header className="h-[376px] bg-discos bg-cover bg-center">
@@ -34,7 +44,7 @@ export const Signup = () => {
                 <h2 className="size-[2rem] p-4 w-[100%] mx-auto font-bold flex items-center justify-center">
                 REGISTRO
                 </h2>
-                <form onSubmit={handleSubmit} className="p-3 flex flex-col gap-3">
+                <form onSubmit={handleFormSubmit} className="p-3 flex flex-col gap-3">
                             <div className="mb-3 flex flex-col ">
                                 <label htmlFor="nombre">
                                     <strong>Nombre</strong>
@@ -44,7 +54,8 @@ export const Signup = () => {
                                     placeholder="Ingrese su nombre"
                                     name="nombre"
                                     className="border-2 p-1"
-                                    onChange={(e)=> setNombre(e.target.value)}
+                                    value={formData.nombre} 
+                                    onChange={handleInputChange}
                                     required
                                 />
                             </div>
@@ -57,7 +68,8 @@ export const Signup = () => {
                                     placeholder="Ingrese su apellido"
                                     name="apellido"
                                     className="border-2 p-1"
-                                    onChange={(e)=> setApellido(e.target.value)}
+                                    value={formData.apellido} 
+                                    onChange={handleInputChange}
                                     required
                                 />
                             </div>
@@ -65,7 +77,7 @@ export const Signup = () => {
                                 <label htmlFor="opciones">
                                     <strong>Género</strong>
                                 </label>
-                                <select id="opciones" name="opciones" className='overflow-hidden border-2 p-2' onChange={(e) => setGenero(e.target.value)}>
+                                <select id="opciones" name="opciones" className='overflow-hidden border-2 p-2' value={formData.genero} onChange={handleInputChange}>
                                     <option value="opcion1">Masculino</option>
                                     <option value="opcion2">Femenino</option>
                                     <option value="opcion3">Otro</option>
@@ -80,7 +92,8 @@ export const Signup = () => {
                                     placeholder="Ingrese su genero"
                                     name="nacimiento"
                                     className="border-2 p-1"
-                                    onChange={(e)=> setNacimiento(e.target.value)}
+                                    value={formData.nacimiento} 
+                                    onChange={handleInputChange}
                                     required
                                 />
                             </div>
@@ -88,7 +101,7 @@ export const Signup = () => {
                                 <label htmlFor="opciones">
                                     <strong>Nivel</strong>
                                 </label>
-                                <select id="opciones2" name="opciones2" className='overflow-hidden border-2 p-2' onChange={(e) => setNivel(e.target.value)}>
+                                <select id="opciones2" name="opciones2" className='overflow-hidden border-2 p-2' value={formData.nivel} onChange={handleInputChange}>
                                     <option value="opcion1">Cuna</option>
                                     <option value="opcion2">Jardín</option>
                                     <option value="opcion3">Guardería</option>
@@ -105,11 +118,8 @@ export const Signup = () => {
                                     placeholder="Ingrese su número telefónico"
                                     name="telefono"
                                     className="border-2 p-1"
-                                    onChange={(e) => {
-                                    // Validar que la entrada sea solo números
-                                    const numero = e.target.value.replace(/[^0-9]/g, '');
-                                    setTelefono(numero);
-                                    }}
+                                    value={formData.telefono} 
+                                    onChange={handleInputChange}
                                     required
                                 />
                             </div>
@@ -122,7 +132,8 @@ export const Signup = () => {
                                     placeholder="Ingrese su email"
                                     name="email"
                                     className="border-2 p-1 appearance-none"
-                                    onChange={(e)=> setEmail(e.target.value)}
+                                    value={formData.email} 
+                                    onChange={handleInputChange}
                                     required
                                 />
                             </div>
@@ -135,14 +146,14 @@ export const Signup = () => {
                                     placeholder="Ingrese su contraseña"
                                     name="password"
                                     className="border-2 p-1"
-                                    onChange={(e)=> setPassword(e.target.value)}
+                                    value={formData.password} 
+                                    onChange={handleInputChange}
                                     required
                                 />
                             </div>
                             <button
                     type="submit"
                     className="border-2 text-white p-2 w-100 rounded-none bg-light-green-300 hover:bg-light-green-500 w-[100%] mx-auto"
-                    onClick={handleSubmit}
                 >
                     Registrarse
                 </button>
