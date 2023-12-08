@@ -120,187 +120,187 @@ const Nosotros = () => {
 
       <div className=" mx-auto max-w-[76rem]">
         <h2 className="text-[36px] leading-[48px]">Nuestras Tutoras</h2>
-        <div className="mt-[72px] mb-[232px] ml-[104px]">
-        <div>
-          <details className="group">
-            <summary className="flex items-center justify-between font-medium list-none cursor-pointer">
-              <span className="relative">
-                <img
-                  src="/nosotros_tutora1.png"
-                  className="w-[176px]"
-                  alt="tutora"
-                />
-                <p className="absolute bottom-0 right-0">A.C.-</p>
-              </span>
-              <span className="h-[48px] text-[36px] leading-[48px]">
-                {" "}
-                Stephany Rodríguez
-              </span>
-              <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
-                <svg
-                  fill="none"
-                  height="24"
-                  shapeRendering="geometricPrecision"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  width="24"
-                >
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <p className="mt-3 text-neutral-600 group-open:animate-fadeIn">
-              Lorem ipsum dolor sit amet.
-            </p>
-          </details>
-        </div>
-        <div className="py-5">
-          <details className="group">
-            <summary className="flex items-center justify-between font-medium list-none cursor-pointer">
-              <span className="relative">
-                <img
-                  src="/nosotros_tutora2.png"
-                  className="w-[176px]"
-                  alt="tutora"
-                />
-                <p className="absolute bottom-0 right-0">A.G.-</p>
-              </span>
-              <span className="h-[48px] text-[36px] leading-[48px]">
-                {" "}
-                Noemi Pérez
-              </span>
-              <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
-                <svg
-                  fill="none"
-                  height="24"
-                  shapeRendering="geometricPrecision"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  width="24"
-                >
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <p className="mt-3 text-neutral-600 group-open:animate-fadeIn">
-              Lorem ipsum dolor sit amet.
-            </p>
-          </details>
-        </div>
-        <div className="py-5">
-          <details className="group">
-            <summary className="flex items-center justify-between font-medium list-none cursor-pointer">
-              <span className="relative">
-                <img
-                  src="/nosotros_tutora3.png"
-                  className="w-[176px]"
-                  alt="tutora"
-                />
-                <p className="absolute bottom-0 right-0">A.J.-</p>
-              </span>
-              <span className="h-[48px] text-[36px] leading-[48px]">
-                {" "}
-                Dafne Gómez
-              </span>
-              <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
-                <svg
-                  fill="none"
-                  height="24"
-                  shapeRendering="geometricPrecision"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  width="24"
-                >
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <p className="mt-3 text-neutral-600 group-open:animate-fadeIn">
-              Lorem ipsum dolor sit amet.
-            </p>
-          </details>
-        </div>
-        <div className="py-5">
-          <details className="group">
-            <summary className="flex items-center justify-between font-medium list-none cursor-pointer">
-              <span className="relative">
-                <img
-                  src="/nosotros_tutora4.png"
-                  className="w-[176px]"
-                  alt="tutora"
-                />
-                <p className="absolute bottom-0 right-0">A.P.-</p>
-              </span>
-              <span className="h-[48px] text-[36px] leading-[48px]">
-                {" "}
-                Ivanna Morales
-              </span>
-              <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
-                <svg
-                  fill="none"
-                  height="24"
-                  shapeRendering="geometricPrecision"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  width="24"
-                >
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <p className="mt-3 text-neutral-600 group-open:animate-fadeIn">
-              Lorem ipsum dolor sit amet.
-            </p>
-          </details>
-        </div>
-        <div className="py-5">
-          <details className="group">
-            <summary className="flex items-center justify-between font-medium list-none cursor-pointer">
-              <span className="relative">
-                <img
-                  src="/nosotros_tutora5.png"
-                  className="w-[176px]"
-                  alt="tutora"
-                />
-                <p className="absolute bottom-0 right-0">A.E.-</p>
-              </span>
-              <span className="h-[48px] text-[36px] leading-[48px]">
-                {" "}
-                Lucía Ramos
-              </span>
-              <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
-                <svg
-                  fill="none"
-                  height="24"
-                  shapeRendering="geometricPrecision"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  width="24"
-                >
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <p className="mt-3 text-neutral-600 group-open:animate-fadeIn">
-              Lorem ipsum dolor sit amet.
-            </p>
-          </details>
-        </div>
+        <div className="mb-[232px] ml-[104px] mt-[72px]">
+          <div>
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
+                <span className="relative">
+                  <img
+                    src="/nosotros_tutora1.png"
+                    className="w-[176px]"
+                    alt="tutora"
+                  />
+                  <p className="absolute bottom-0 right-0">A.C.-</p>
+                </span>
+                <span className="h-[48px] text-[36px] leading-[48px]">
+                  {" "}
+                  Stephany Rodríguez
+                </span>
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shapeRendering="geometricPrecision"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </details>
+          </div>
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
+                <span className="relative">
+                  <img
+                    src="/nosotros_tutora2.png"
+                    className="w-[176px]"
+                    alt="tutora"
+                  />
+                  <p className="absolute bottom-0 right-0">A.G.-</p>
+                </span>
+                <span className="h-[48px] text-[36px] leading-[48px]">
+                  {" "}
+                  Noemi Pérez
+                </span>
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shapeRendering="geometricPrecision"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </details>
+          </div>
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
+                <span className="relative">
+                  <img
+                    src="/nosotros_tutora3.png"
+                    className="w-[176px]"
+                    alt="tutora"
+                  />
+                  <p className="absolute bottom-0 right-0">A.J.-</p>
+                </span>
+                <span className="h-[48px] text-[36px] leading-[48px]">
+                  {" "}
+                  Dafne Gómez
+                </span>
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shapeRendering="geometricPrecision"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </details>
+          </div>
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
+                <span className="relative">
+                  <img
+                    src="/nosotros_tutora4.png"
+                    className="w-[176px]"
+                    alt="tutora"
+                  />
+                  <p className="absolute bottom-0 right-0">A.P.-</p>
+                </span>
+                <span className="h-[48px] text-[36px] leading-[48px]">
+                  {" "}
+                  Ivanna Morales
+                </span>
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shapeRendering="geometricPrecision"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </details>
+          </div>
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
+                <span className="relative">
+                  <img
+                    src="/nosotros_tutora5.png"
+                    className="w-[176px]"
+                    alt="tutora"
+                  />
+                  <p className="absolute bottom-0 right-0">A.E.-</p>
+                </span>
+                <span className="h-[48px] text-[36px] leading-[48px]">
+                  {" "}
+                  Lucía Ramos
+                </span>
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    shapeRendering="geometricPrecision"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </details>
+          </div>
         </div>
       </div>
     </section>

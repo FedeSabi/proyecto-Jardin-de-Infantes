@@ -1,17 +1,16 @@
 
 import mongoose from 'mongoose';
 
-
 const userSchema = new mongoose.Schema({
   nombre : String,
   apellido : String,
   genero :String,
-  nacimiento : String,
+  nacimiento : Date,
   nivel : String,
-  nombreYapellido :String,
   telefono : String,
   email : String,
-  
+  password: String
 });
-const User= mongoose.model('UsuariosJardin', userSchema);
+
+const User = mongoose.model('usuarios', userSchema);
 export default User

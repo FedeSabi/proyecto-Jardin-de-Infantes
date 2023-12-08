@@ -7,7 +7,8 @@ import { Servicios } from "./pages/Servicios.jsx";
 import { Facilities } from "./pages/Facilities.jsx";
 import { Admission } from "./pages/Admission.jsx";
 import { Contact } from "./pages/Contact.jsx";
-import Login from "./pages/Login.jsx";
+import { Login } from "./pages/Login.jsx";
+import { Signup } from "./pages/Signup.jsx";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/admission" element={<Admission />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/registro" element={<Signup />} />
         </Routes>
         <Footer />
       </Router>
