@@ -13,7 +13,7 @@ const Servicios =()=>{
                 </h1>
             </div>
             <div className="flex w-232 gap-6 mt-[1rem] mb-[4rem] mx-[112px] max-w-[74rem]">
-                <Link className="text-black font-medium hover:text-gray-300" to="/">
+                <Link className="font-medium text-black hover:text-gray-300" to="/">
                     Home
                 </Link>
                 <p>/</p>
@@ -27,7 +27,7 @@ const Servicios =()=>{
                             <h4 className="text-[24px] leading-[32px] font-medium">Cuna</h4>
                             <p className="text-gray-400 text-[16px] leading-[24px]">0 a 9 meses</p>
                         </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
+                        <div className="ml-[1rem] w-[40px] h-[40px] border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
                             <AiOutlineArrowRight className="text-[16px] text-black"/>
                         </div>
                     </button>  
@@ -38,7 +38,7 @@ const Servicios =()=>{
                             <h4 className="text-[24px] leading-[32px] font-medium">Jardín</h4>
                             <p className="text-gray-400 text-[16px] leading-[24px]">1 a 2 años</p>
                         </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
+                        <div className="ml-[1rem] w-[40px] h-[40px] border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
                             <AiOutlineArrowRight className="text-[16px] text-black"/>
                         </div>
                     </button>  
@@ -49,7 +49,7 @@ const Servicios =()=>{
                             <h4 className="text-[24px] leading-[32px] font-medium">Guardería</h4>
                             <p className="text-gray-400 text-[16px] leading-[24px]">2 a 5 años</p>
                         </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
+                        <div className="ml-[1rem] w-[40px] h-[40px] border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
                             <AiOutlineArrowRight className="text-[16px] text-black"/>
                         </div>
                     </button>  
@@ -60,7 +60,7 @@ const Servicios =()=>{
                             <h4 className="text-[24px] leading-[32px] font-medium">E. Psicopedagogía</h4>
                             <p className="text-[16px] leading-[24px]">Taller</p>
                         </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
+                        <div className="ml-[1rem] w-[40px] h-[40px] border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
                             <AiOutlineArrowRight className="text-[16px] text-black"/>
                         </div>
                     </button>  
@@ -71,7 +71,7 @@ const Servicios =()=>{
                             <h4 className="text-[24px] leading-[32px] font-medium">E. Temprana</h4>
                             <p className="text-[16px] leading-[24px]">Bebés & Niños</p>
                         </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
+                        <div className="ml-[1rem] w-[40px] h-[40px] border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
                             <AiOutlineArrowRight className="text-[16px] text-black"/>
                         </div>
                     </button>  
@@ -82,7 +82,7 @@ const Servicios =()=>{
                             <h4 className="text-[24px] leading-[32px] font-medium">Talleres</h4>
                             <p className="text-[16px] leading-[24px]">Niños y Padres</p>
                         </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
+                        <div className="ml-[1rem] w-[40px] h-[40px] border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
                             <AiOutlineArrowRight className="text-[16px] text-black"/>
                         </div>
                     </button>  
@@ -93,7 +93,7 @@ const Servicios =()=>{
                             <h4 className="text-[24px] leading-[32px] font-medium">Cocina</h4>
                             <p className="text-[16px] leading-[24px]">Servicio</p>
                         </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
+                        <div className="ml-[1rem] w-[40px] h-[40px] border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
                             <AiOutlineArrowRight className="text-[16px] text-black"/>
                         </div>
                     </button>  
@@ -104,7 +104,7 @@ const Servicios =()=>{
                             <h4 className="text-[24px] leading-[32px] font-medium">Escuela de Padres</h4>
                             <p className="text-gray-400 text-[16px] leading-[24px]">Servicio</p>
                         </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
+                        <div className="ml-[1rem] w-[40px] h-[40px] border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
                             <AiOutlineArrowRight className="text-[16px] text-black"/>
                         </div>
                     </button>  
