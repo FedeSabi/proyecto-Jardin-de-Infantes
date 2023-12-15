@@ -36,7 +36,6 @@ export const getUsersByNivel = async (req, res) => {
   }
 };
 
-
 // actualizacion de los usuarios
 export const updateUserDetails = async (req, res) => {
   const { id } = req.params;

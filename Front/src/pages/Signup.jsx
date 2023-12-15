@@ -24,7 +24,7 @@ export const Signup = () => {
   const handleFormSubmit  = async (e) =>{
     e.preventDefault();
     try {
-        const response = await axios.post('http://localhost:5173/registro', formData);
+        const response = await axios.post('http://localhost:3000/registro', formData);
         console.log(response.data);
     } catch (error) {
         console.error('Error en el registro:', error.response ? error.response.data : error.message);
