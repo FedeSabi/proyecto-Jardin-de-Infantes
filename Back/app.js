@@ -8,7 +8,7 @@ import userRoutes from './routes/aspiranteRoutes.js';
 
 //coneccion app y port
 const app = express();
-const port = process.env.PORT || 3000;
+
 
 
 
