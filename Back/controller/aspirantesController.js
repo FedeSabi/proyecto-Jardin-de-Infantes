@@ -54,12 +54,9 @@ export const updateUserDetails = async (req, res) => {
   }
 };
 
-
 //eliminacion del usuario
 export const deleteUser = async (req, res) => {
   const { id } = req.params;
-
- 
   await User.findByIdAndRemove(id);
 
   res.json({ message: 'Usuario eliminado exitosamente' });

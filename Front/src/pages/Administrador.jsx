@@ -1,4 +1,5 @@
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Administrador = () => {
 
@@ -14,6 +15,17 @@ const Administrador = () => {
     email:'',
   })
 
+const [usuarios, setUsuarios] = useState([])
+const [indiceFilaEditada, setIndiceFilaEditada] = useState(null)
+
+useEffect(() => {
+  // Fetch de datos desde  el backend cuando el componente se monta
+  // puedes adaptar la URL segun tu configuracion
+  axios.get('http://tu-backend.com/usuarios/cuna')
+  .then(response => setUsuarios(response.data))
+  .catch(error => console.error('Error al obtener usuarios:', error))
+}, []) //el array vacio asegura que este efecto se ejecute solo una vez al montar el componente
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -21,17 +33,48 @@ const Administrador = () => {
       [name]: value,
     })
   }
-const handleModificarClick = () => {
+const handleModificarClick = (index) => {
   setEditing(true)
+  setIndiceFilaEditada(index)
+  //puedes establecer los datos de la fila editada en el formulario
+  setFormData(usuarios[index])
 }
 
 const handleGuardarClick = () => {
-  //aca podemos hacer la logica de guardar las modificaciones de datos
+  //asumiendo que tienes una propiedad '_id' en tus datos para identificar a cada usuario
+  const idUsuarioEditado = usuarios[indiceFilaEditada]._id
+  axios.post(`http://tu-backend.com/actualizar/${idUsuarioEditado}`, formData)
+  .then(response => {
+    // actualiza el estado de usuarios con los datos modificados
+    setUsuarios(prevUsuarios => {
+      const nuevosUsuarios = [...prevUsuarios]
+      nuevosUsuarios[indiceFilaEditada] = response.data
+      return nuevosUsuarios
+    })
+  })
+  .catch(error => console.error('Error al actualizar usuario:', error))
+
   setEditing(false)
+  setIndiceFilaEditada(null)
+  setFormData({
+    nombre:'',
+    apellido:'',
+    genero:'',
+    nombretutor:'',
+    fechaNacimiento:'',
+    nivelEducacion:'',
+    telefonoContacto:'',
+    email:'',  
+})
 }
 
-const handleEliminarClick = () => {
-  // aca la logica de eliminar los elementos
+const handleEliminarClick = (idUsuario) => {
+  axios.delete(`http://tu-backend.com/eliminar/usuario/${idUsuario}`)
+  .then(() => {
+    //filtra el usuario eliminado de la lista
+    setUsuarios(prevUsuarios => prevUsuarios.filter(usuario => usuario._id !== idUsuario))
+  })
+  .catch(error => console.error('Error al eliminar usuario:', error))
 }
 
   return (
