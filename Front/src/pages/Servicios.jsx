@@ -1,116 +1,133 @@
-import { Link } from "react-router-dom";
-import {AiOutlineArrowRight} from "react-icons/ai"
+import { AiOutlineArrowRight } from "react-icons/ai";
 
-const Servicios =()=>{
-    const handleRedireccionar = () => {
-        window.location.href = "/servicios/guarderia";
-      };
-    return(
-        <section className="overflow-x-hidden">
-            <div className="w-screen m-[0px] h-[376px] bg-discos bg-cover bg-center">
-                <h1 className="text-white px-[112px] pt-[160px] max-w-[1050px] h-[144px] text-[58px] leading-[72px] font-normal">
-                    Nuestros Servicios
-                </h1>
+const Servicios = () => {
+  return (
+    <section className="overflow-x-hidden">
+      <header className="h-[376px] bg-discos bg-cover bg-center pt-[172px]">
+        <div className=" mx-auto max-w-[76rem]">
+          <h1 className="text-[58px] font-normal leading-[72px] text-white">
+            Nuestros Servicios
+          </h1>
+        </div>
+      </header>
+
+      <p className="mx-auto mb-[4rem] mt-[176px] max-w-[76rem]">
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id es. Ut enim
+        ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+        laboriosam, nisi ut
+      </p>
+
+      <div className="mx-auto mb-[256px] grid max-w-[76rem] grid-cols-3 gap-[1rem]">
+        <div className="flex w-[384px] items-end justify-center rounded-2xl bg-cuna bg-cover bg-center">
+          <button className="mb-[1rem] flex h-[88px] w-[356px] items-center rounded-2xl bg-white px-[2rem]">
+            <div className="flex w-[252px] flex-col items-start">
+              <h4 className="text-[24px] font-medium leading-[32px]">Cuna</h4>
+              <p className="text-[16px] leading-[24px] text-gray-400">
+                0 a 9 meses
+              </p>
             </div>
-            <div className="flex w-232 gap-6 mt-[1rem] mb-[4rem] mx-[112px] max-w-[74rem]">
-                <Link className="text-black font-medium hover:text-gray-300" to="/">
-                    Home
-                </Link>
-                <p>/</p>
-                <p className="text-[#7C858E]">Servicios</p>
+            <div className="ml-[1rem] flex h-[40px] w-[40px] items-center justify-center rounded-[1000px] border-[2px] border-solid border-gray-300 hover:bg-[#D9D9D9]">
+              <AiOutlineArrowRight className="text-[16px] text-black" />
             </div>
-            <h5 className="mx-auto max-w-[74rem] mb-[4rem]">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut</h5>
-            <div className="flex gap-[1rem] flex-wrap mx-auto max-w-[74rem]">
-                <div className="w-[384px] h-[400px] bg-cuna bg-cover bg-center rounded-2xl flex items-end justify-center">
-                    <button className="w-[356px] h-[88px] bg-white rounded-2xl mb-[1rem] px-[2rem] flex items-center">
-                        <div className="flex flex-col w-[252px] items-start">
-                            <h4 className="text-[24px] leading-[32px] font-medium">Cuna</h4>
-                            <p className="text-gray-400 text-[16px] leading-[24px]">0 a 9 meses</p>
-                        </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
-                            <AiOutlineArrowRight className="text-[16px] text-black"/>
-                        </div>
-                    </button>  
-                </div>
-                <div className="w-[384px] h-[400px] bg-jardin bg-cover bg-center rounded-2xl flex items-end justify-center">
-                    <button className="w-[356px] h-[88px] bg-white rounded-2xl mb-[1rem] px-[2rem] flex items-center">
-                        <div className="flex flex-col w-[252px] items-start">
-                            <h4 className="text-[24px] leading-[32px] font-medium">Jardín</h4>
-                            <p className="text-gray-400 text-[16px] leading-[24px]">1 a 2 años</p>
-                        </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
-                            <AiOutlineArrowRight className="text-[16px] text-black"/>
-                        </div>
-                    </button>  
-                </div>
-                <div className="w-[384px] h-[400px] bg-guarderia bg-cover bg-center rounded-2xl flex items-end justify-center">
-                    <button onClick={handleRedireccionar} className="w-[356px] h-[88px] bg-white rounded-2xl mb-[1rem] px-[2rem] flex items-center">
-                        <div className="flex flex-col w-[252px] items-start">
-                            <h4 className="text-[24px] leading-[32px] font-medium">Guardería</h4>
-                            <p className="text-gray-400 text-[16px] leading-[24px]">2 a 5 años</p>
-                        </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
-                            <AiOutlineArrowRight className="text-[16px] text-black"/>
-                        </div>
-                    </button>  
-                </div>
-                <div className="w-[384px] h-[400px] bg-psicopedagogia bg-cover bg-center rounded-2xl flex items-end justify-center">
-                    <button className="w-[356px] h-[88px] bg-white rounded-2xl mb-[1rem] px-[2rem] flex items-center">
-                        <div className="flex flex-col w-[252px] items-start">
-                            <h4 className="text-[24px] leading-[32px] font-medium">E. Psicopedagogía</h4>
-                            <p className="text-[16px] leading-[24px]">Taller</p>
-                        </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
-                            <AiOutlineArrowRight className="text-[16px] text-black"/>
-                        </div>
-                    </button>  
-                </div>
-                <div className="w-[384px] h-[400px] bg-temprana bg-cover bg-center rounded-2xl flex items-end justify-center">
-                    <button className="w-[356px] h-[88px] bg-white rounded-2xl mb-[1rem] px-[2rem] flex items-center">
-                        <div className="flex flex-col w-[252px] items-start">
-                            <h4 className="text-[24px] leading-[32px] font-medium">E. Temprana</h4>
-                            <p className="text-[16px] leading-[24px]">Bebés & Niños</p>
-                        </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
-                            <AiOutlineArrowRight className="text-[16px] text-black"/>
-                        </div>
-                    </button>  
-                </div>
-                <div className="w-[384px] h-[400px] bg-talleres bg-cover bg-center rounded-2xl flex items-end justify-center">
-                    <button className="w-[356px] h-[88px] bg-white rounded-2xl mb-[1rem] px-[2rem] flex items-center">
-                        <div className="flex flex-col w-[252px] items-start">
-                            <h4 className="text-[24px] leading-[32px] font-medium">Talleres</h4>
-                            <p className="text-[16px] leading-[24px]">Niños y Padres</p>
-                        </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
-                            <AiOutlineArrowRight className="text-[16px] text-black"/>
-                        </div>
-                    </button>  
-                </div>
-                <div className="w-[384px] h-[400px] bg-cocina bg-cover bg-center rounded-2xl flex items-end justify-center">
-                    <button className="w-[356px] h-[88px] bg-white rounded-2xl mb-[1rem] px-[2rem] flex items-center">
-                        <div className="flex flex-col w-[252px] items-start">
-                            <h4 className="text-[24px] leading-[32px] font-medium">Cocina</h4>
-                            <p className="text-[16px] leading-[24px]">Servicio</p>
-                        </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
-                            <AiOutlineArrowRight className="text-[16px] text-black"/>
-                        </div>
-                    </button>  
-                </div>
-                <div className="w-[384px] h-[400px] bg-escuela bg-cover bg-center rounded-2xl flex items-end justify-center">
-                    <button className="w-[356px] h-[88px] bg-white rounded-2xl mb-[1rem] px-[2rem] flex items-center">
-                        <div className="flex flex-col w-[252px] items-start">
-                            <h4 className="text-[24px] leading-[32px] font-medium">Escuela de Padres</h4>
-                            <p className="text-gray-400 text-[16px] leading-[24px]">Servicio</p>
-                        </div>
-                        <div className="ml-[1rem] w-[40px] h-[40px] border border-solid border-[2px] border-gray-300 rounded-[1000px] flex items-center justify-center hover:bg-[#D9D9D9]">
-                            <AiOutlineArrowRight className="text-[16px] text-black"/>
-                        </div>
-                    </button>  
-                </div>
+          </button>
+        </div>
+        <div className="flex h-[400px] w-[384px] items-end justify-center rounded-2xl bg-jardin bg-cover bg-center">
+          <button className="mb-[1rem] flex h-[88px] w-[356px] items-center rounded-2xl bg-white px-[2rem]">
+            <div className="flex w-[252px] flex-col items-start">
+              <h4 className="text-[24px] font-medium leading-[32px]">Jardín</h4>
+              <p className="text-[16px] leading-[24px] text-gray-400">
+                1 a 2 años
+              </p>
             </div>
-        </section>
-    )
-}
-export { Servicios }
+            <div className="ml-[1rem] flex h-[40px] w-[40px] items-center justify-center rounded-[1000px] border-[2px] border-solid border-gray-300 hover:bg-[#D9D9D9]">
+              <AiOutlineArrowRight className="text-[16px] text-black" />
+            </div>
+          </button>
+        </div>
+        <div className="flex h-[400px] w-[384px] items-end justify-center rounded-2xl bg-guarderia bg-cover bg-center">
+          <button className="mb-[1rem] flex h-[88px] w-[356px] items-center rounded-2xl bg-white px-[2rem]">
+            <div className="flex w-[252px] flex-col items-start">
+              <h4 className="text-[24px] font-medium leading-[32px]">
+                Guardería
+              </h4>
+              <p className="text-[16px] leading-[24px] text-gray-400">
+                2 a 5 años
+              </p>
+            </div>
+            <div className="ml-[1rem] flex h-[40px] w-[40px] items-center justify-center rounded-[1000px] border-[2px] border-solid border-gray-300 hover:bg-[#D9D9D9]">
+              <AiOutlineArrowRight className="text-[16px] text-black" />
+            </div>
+          </button>
+        </div>
+        <div className="flex h-[400px] w-[384px] items-end justify-center rounded-2xl bg-psicopedagogia bg-cover bg-center">
+          <button className="mb-[1rem] flex h-[88px] w-[356px] items-center rounded-2xl bg-white px-[2rem]">
+            <div className="flex w-[252px] flex-col items-start">
+              <h4 className="text-[24px] font-medium leading-[32px]">
+                E. Psicopedagogía
+              </h4>
+              <p className="text-[16px] leading-[24px]">Taller</p>
+            </div>
+            <div className="ml-[1rem] flex h-[40px] w-[40px] items-center justify-center rounded-[1000px] border-[2px] border-solid border-gray-300 hover:bg-[#D9D9D9]">
+              <AiOutlineArrowRight className="text-[16px] text-black" />
+            </div>
+          </button>
+        </div>
+        <div className="flex h-[400px] w-[384px] items-end justify-center rounded-2xl bg-temprana bg-cover bg-center">
+          <button className="mb-[1rem] flex h-[88px] w-[356px] items-center rounded-2xl bg-white px-[2rem]">
+            <div className="flex w-[252px] flex-col items-start">
+              <h4 className="text-[24px] font-medium leading-[32px]">
+                E. Temprana
+              </h4>
+              <p className="text-[16px] leading-[24px]">Bebés & Niños</p>
+            </div>
+            <div className="ml-[1rem] flex h-[40px] w-[40px] items-center justify-center rounded-[1000px] border-[2px] border-solid border-gray-300 hover:bg-[#D9D9D9]">
+              <AiOutlineArrowRight className="text-[16px] text-black" />
+            </div>
+          </button>
+        </div>
+        <div className="flex h-[400px] w-[384px] items-end justify-center rounded-2xl bg-talleres bg-cover bg-center">
+          <button className="mb-[1rem] flex h-[88px] w-[356px] items-center rounded-2xl bg-white px-[2rem]">
+            <div className="flex w-[252px] flex-col items-start">
+              <h4 className="text-[24px] font-medium leading-[32px]">
+                Talleres
+              </h4>
+              <p className="text-[16px] leading-[24px]">Niños y Padres</p>
+            </div>
+            <div className="ml-[1rem] flex h-[40px] w-[40px] items-center justify-center rounded-[1000px] border-[2px] border-solid border-gray-300 hover:bg-[#D9D9D9]">
+              <AiOutlineArrowRight className="text-[16px] text-black" />
+            </div>
+          </button>
+        </div>
+        <div className="flex h-[400px] w-[384px] items-end justify-center rounded-2xl bg-cocina bg-cover bg-center">
+          <button className="mb-[1rem] flex h-[88px] w-[356px] items-center rounded-2xl bg-white px-[2rem]">
+            <div className="flex w-[252px] flex-col items-start">
+              <h4 className="text-[24px] font-medium leading-[32px]">Cocina</h4>
+              <p className="text-[16px] leading-[24px]">Servicio</p>
+            </div>
+            <div className="ml-[1rem] flex h-[40px] w-[40px] items-center justify-center rounded-[1000px] border-[2px] border-solid border-gray-300 hover:bg-[#D9D9D9]">
+              <AiOutlineArrowRight className="text-[16px] text-black" />
+            </div>
+          </button>
+        </div>
+        <div className="flex h-[400px] w-[384px] items-end justify-center rounded-2xl bg-escuela bg-cover bg-center">
+          <button className="mb-[1rem] flex h-[88px] w-[356px] items-center rounded-2xl bg-white px-[2rem]">
+            <div className="flex w-[252px] flex-col items-start">
+              <h4 className="text-[24px] font-medium leading-[32px]">
+                Escuela de Padres
+              </h4>
+              <p className="text-[16px] leading-[24px] text-gray-400">
+                Servicio
+              </p>
+            </div>
+            <div className="ml-[1rem] flex h-[40px] w-[40px] items-center justify-center rounded-[1000px] border-[2px] border-solid border-gray-300 hover:bg-[#D9D9D9]">
+              <AiOutlineArrowRight className="text-[16px] text-black" />
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+export { Servicios };
