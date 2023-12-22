@@ -3,33 +3,47 @@ import React, { useState, useEffect } from 'react';
 
 const Administrador = () => {
   const [usuarios, setUsuarios] = useState([]);
-  console.log(usuarios);
   const [nivel, setNivel] = useState('jardin');
   const [idUsuarioEliminar, setIdUsuarioEliminar] = useState(null);
-  console.log(idUsuarioEliminar);
   const [idUsuarioActualizar, setIdUsuarioActualizar] = useState(null);
-  console.log(idUsuarioActualizar);
   const [nombreActualizar, setNombreActualizar] = useState('');
-  // Agrega otros estados para los campos que deseas actualizar
+  const [apellidoActualizar, setApellidoActualizar] = useState('');
+  const [generoActualizar, setGeneroActualizar] = useState('');
+  const [emailActualizar, setEmailActualizar] = useState('');
+  const [nombreTutorActualizar, setNombreTutorActualizar] = useState('');
+  const [telefonoActualizar, setTelefonoActualizar] = useState('');
+  const [nacimiento, setNacimiento] = useState('');
 
-  const handleSubmitModificar = async (e) => {
-    e.preventDefault();
-    try {
-      const updatedUser = {
-        nombre: nombreActualizar, // Reemplaza con el nuevo nombre
-        // Agrega otros campos que deseas actualizar
-      };
   
+
+  const handleUpdateClick = async (id) => {
+    try {
+      setIdUsuarioActualizar(id);
+      
+      const updatedUser = {
+        nombre: nombreActualizar,
+        apellido: apellidoActualizar,
+        genero: generoActualizar,
+        email: emailActualizar,
+        nombreTutor: nombreTutorActualizar,
+        telefono: telefonoActualizar,
+        
+      };
       await axios.put(`http://localhost:3000/actualizar/${idUsuarioActualizar}`, updatedUser);
       const response = await axios.get(`http://localhost:3000/usuarios/${nivel}`);
       setUsuarios(response.data);
       setIdUsuarioActualizar(null);
-      setNombreActualizar(''); // Limpia el estado del nuevo nombre
+      
+      setNombreActualizar('');
+      setApellidoActualizar('');
+      setGeneroActualizar('');
+      setEmailActualizar('');
+      setNombreTutorActualizar('');
+      setTelefonoActualizar('');
     } catch (error) {
-      console.error('Error al actualizar usuario:', error);
+      console.error('Error al preparar o realizar la actualización:', error);
     }
   };
-  
 
   useEffect(() => {
     const obtenerUsuarios = async () => {
@@ -44,29 +58,17 @@ const Administrador = () => {
     obtenerUsuarios();
   }, [nivel, idUsuarioEliminar, idUsuarioActualizar]);
 
-
   const eliminarUsuario = async (id) => {
     try {
-      console.log('Intentando eliminar usuario con ID:', id);
       await axios.delete(`http://localhost:3000/eliminar/usuario/${id}`);
-      console.log('Usuario eliminado correctamente');
       setUsuarios(usuarios.filter((usuario) => usuario._id !== id));
       setIdUsuarioEliminar(null); // Limpia el estado después de eliminar
     } catch (error) {
       console.error('Error al eliminar usuario:', error);
     }
   };
-  
-  
-  
-  
-
 
   
-
-
-  
-
   return (
     <div className="flex min-h-screen">
       <nav className="w-64 flex-shrink-0">
@@ -194,17 +196,19 @@ const Administrador = () => {
                   <td className=" py-2 px-4 text-center">{usuario.nombreTutor}</td>
                   <td className=" py-2 px-4 text-center">{usuario.telefono}</td>
                   <td className=" py-2 px-4 text-center">
-                    <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2"
-                    onClick={() => setIdUsuarioActualizar(usuario._id)}>
-                    
-                      Modificar
-                    </button>
+                  <button
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2"
+            onClick={() => handleUpdateClick(usuario._id)}
+          >
+            Modificar
+          </button>
                     <button
-                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-                      onClick={() => setIdUsuarioEliminar(usuario._id)}
-                    >
-                      Eliminar
-                    </button>
+                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                    onClick={() => eliminarUsuario(usuario._id)}
+                      >
+                    Eliminar
+                   </button>
+
                   </td>
                   
                 </tr>
@@ -212,6 +216,55 @@ const Administrador = () => {
             </tbody>
             
           </table>
+          {idUsuarioActualizar && (
+        <div className="flex-auto p-4">
+          <h2 className='bg-blue-500 w-[146px] h-[30px] flex justify-center items-center rounded-lg  mb-[26px] text-white'>Modificar Usuario</h2>
+          <form onSubmit={(e) => handleUpdateClick(e)}className='flex flex-col'>
+            <label>Nombre:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={nombreActualizar}
+              onChange={(e) => setNombreActualizar(e.target.value)}
+            />
+             <label>Apellido:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={apellidoActualizar}
+              onChange={(e) => setApellidoActualizar(e.target.value)}
+            />
+              <label>Genero:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={generoActualizar}
+              onChange={(e) => setGeneroActualizar(e.target.value)}
+              
+            />
+               <label>Email:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={emailActualizar}
+              onChange={(e) => setEmailActualizar(e.target.value)}
+            />
+             <label>Fecha de nacimiento:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="date"
+              value={nacimiento}
+              onChange={(e) => setNacimiento(e.target.value)}
+            />
+             <label>Nivel:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={nivel}
+              onChange={(e) => setNivel(e.target.value)}
+            />
+            
+
+
+          
+            <button className='w-[10%] mt-[10px] bg-green-200 rounded-lg text-white' type="submit">Guardar cambios</button>
+          </form>
+        </div>
+      )}
         </div>
       </div>
     </div>
