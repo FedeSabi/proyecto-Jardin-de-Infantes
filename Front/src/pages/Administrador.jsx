@@ -1,417 +1,287 @@
-import  { useEffect, useState } from 'react';
+
 import axios from 'axios';
+import  { useState, useEffect } from 'react';
 
 const Administrador = () => {
+  const [usuarios, setUsuarios] = useState([]);
+  const [nivel, setNivel] = useState('jardin');
+  const [idUsuarioEliminar, setIdUsuarioEliminar] = useState(null);
+  const [idUsuarioActualizar, setIdUsuarioActualizar] = useState(null);
+  const [nombreActualizar, setNombreActualizar] = useState('');
+  const [apellidoActualizar, setApellidoActualizar] = useState('');
+  const [generoActualizar, setGeneroActualizar] = useState('');
+  const [emailActualizar, setEmailActualizar] = useState('');
+  const [nombreTutorActualizar, setNombreTutorActualizar] = useState('');
+  const [telefonoActualizar, setTelefonoActualizar] = useState('');
+  const [nacimiento, setNacimiento] = useState('');
 
-  const [editing, setEditing] = useState(false)
-  const [formData, setFormData] = useState({
-    nombre: '',
-    apellido: '',
-    genero: '',
-    nombretutor: '',
-    fechaNacimiento: '',
-    nivelEducacion: '',
-    telefonoContacto: '',
-    email:'',
-  })
+  
 
-const [usuarios, setUsuarios] = useState([])
-const [indiceFilaEditada, setIndiceFilaEditada] = useState(null)
+  const handleUpdateClick = async (id) => {
+    try {
+      setIdUsuarioActualizar(id);
+      
+      const updatedUser = {
+        nombre: nombreActualizar,
+        apellido: apellidoActualizar,
+        genero: generoActualizar,
+        email: emailActualizar,
+        nombreTutor: nombreTutorActualizar,
+        telefono: telefonoActualizar,
+        
+      };
+      await axios.put(`http://localhost:3000/actualizar/${idUsuarioActualizar}`, updatedUser);
+      const response = await axios.get(`http://localhost:3000/usuarios/${nivel}`);
+      setUsuarios(response.data);
+      setIdUsuarioActualizar(null);
+      
+      setNombreActualizar('');
+      setApellidoActualizar('');
+      setGeneroActualizar('');
+      setEmailActualizar('');
+      setNombreTutorActualizar('');
+      setTelefonoActualizar('');
+    } catch (error) {
+      console.error('Error al preparar o realizar la actualización:', error);
+    }
+  };
 
-useEffect(() => {
-  // Fetch de datos desde  el backend cuando el componente se monta
-  // puedes adaptar la URL segun tu configuracion
-  axios.get('http://tu-backend.com/usuarios/cuna')
-  .then(response => setUsuarios(response.data))
-  .catch(error => console.error('Error al obtener usuarios:', error))
-}, []) //el array vacio asegura que este efecto se ejecute solo una vez al montar el componente
+  useEffect(() => {
+    const obtenerUsuarios = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3000/usuarios/${nivel}`);
+        setUsuarios(response.data);
+      } catch (error) {
+        console.error('Error al obtener usuarios:', error);
+      }
+    };
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    })
-  }
-const handleModificarClick = (index) => {
-  setEditing(true)
-  setIndiceFilaEditada(index)
-  //puedes establecer los datos de la fila editada en el formulario
-  setFormData(usuarios[index])
-}
+    obtenerUsuarios();
+  }, [nivel, idUsuarioEliminar, idUsuarioActualizar]);
 
-const handleGuardarClick = () => {
-  //asumiendo que tienes una propiedad '_id' en tus datos para identificar a cada usuario
-  const idUsuarioEditado = usuarios[indiceFilaEditada]._id
-  axios.post(`http://tu-backend.com/actualizar/${idUsuarioEditado}`, formData)
-  .then(response => {
-    // actualiza el estado de usuarios con los datos modificados
-    setUsuarios(prevUsuarios => {
-      const nuevosUsuarios = [...prevUsuarios]
-      nuevosUsuarios[indiceFilaEditada] = response.data
-      return nuevosUsuarios
-    })
-  })
-  .catch(error => console.error('Error al actualizar usuario:', error))
+  const eliminarUsuario = async (id) => {
+    try {
+      await axios.delete(`http://localhost:3000/eliminar/usuario/${id}`);
+      setUsuarios(usuarios.filter((usuario) => usuario._id !== id));
+      setIdUsuarioEliminar(null); // Limpia el estado después de eliminar
+    } catch (error) {
+      console.error('Error al eliminar usuario:', error);
+    }
+  };
 
-  setEditing(false)
-  setIndiceFilaEditada(null)
-  setFormData({
-    nombre:'',
-    apellido:'',
-    genero:'',
-    nombretutor:'',
-    fechaNacimiento:'',
-    nivelEducacion:'',
-    telefonoContacto:'',
-    email:'',  
-})
-}
-
-const handleEliminarClick = (idUsuario) => {
-  axios.delete(`http://tu-backend.com/eliminar/usuario/${idUsuario}`)
-  .then(() => {
-    //filtra el usuario eliminado de la lista
-    setUsuarios(prevUsuarios => prevUsuarios.filter(usuario => usuario._id !== idUsuario))
-  })
-  .catch(error => console.error('Error al eliminar usuario:', error))
-}
-
+  
   return (
-    <div className="mt-40">
-      <div className="flex flex-col text-center">
-      <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-          <div className="overflow-hidden">
-            <table className="min-w-full text-left text-sm font-light">
-              <thead className="border-b font-medium dark:border-neutral-500">
-                <tr>
-                  <th scope="col" className="px-6 py-4">Nombre</th>
-                  <th scope="col" className="px-6 py-4">Apellido</th>
-                  <th scope="col" className="px-6 py-4">Genero</th>
-                  <th scope="col" className="px-6 py-4">Nombre Tutor</th>
-                  <th scope="col" className="px-6 py-4">Fecha Nacimiento</th>
-                  <th scope="col" className="px-6 py-4">Nivel Educacion</th>
-                  <th scope="col" className="px-6 py-4">Telefono contacto</th>
-                  <th scope="col" className="px-6 py-4">Email</th>  
+    <div className="flex min-h-screen">
+      <nav className="w-64 flex-shrink-0">
+        <div className="flex-auto bg-gray-900 h-full ">
+          <div className="flex flex-col overflow-y-auto ">
+            <ul className="relative m-0 p-0 list-none h-full mt-[30%]">
+             
+              <div
+                className={`text-blue-400 flex relative px-4 hover:bg-gray-700 cursor-pointer ${
+                  nivel === 'cuna' && 'bg-gray-700'
+                }`}
+                onClick={() => setNivel('cuna')}
+              >
+                <div className="mr-4 my-auto">
+                  <svg
+                    className="fill-current h-5 w-5"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                
+                  </svg>
+                </div>
+                <div className="flex-auto my-1">
+                  <span>Cuna</span>
+                </div>
+              </div>
+
+              <div
+                className={`text-blue-400 flex relative px-4 hover:bg-gray-700 cursor-pointer ${
+                  nivel === 'jardin' && 'bg-gray-700'
+                }`}
+                onClick={() => setNivel('jardin')}
+              >
+                <div className="mr-4 my-auto">
+                  <svg
+                    className="fill-current h-5 w-5"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
                  
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b dark:border-neutral-500">
-                  <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  {editing ? ( <input
-                  type="text"
-                  name="nombre"
-                  value={formData.nombre}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'mark'
-                   )}
-                   </td> 
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="apellido"
-                  value={formData.apellido}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'smith'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="genero"
-                  value={formData.genero}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'masculino'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="nombreTutor"
-                  value={formData.nombretutor}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'oscar sanchez'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="date"
-                  name="fechaNacimiento"
-                  value={formData.fechaNacimiento}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   '11-10-2011'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="nivelEducacion"
-                  value={formData.nivelEducacion}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'cuna'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="number"
-                  name="telefonoContacto"
-                  value={formData.telefonoContacto}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   '155-154947'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'mark@gmail.com'
-                   )}
-                  </td>
-                  <button
-                        className="text-green-700 text-center text-md m-2"
-                        onClick={editing ? handleGuardarClick : handleModificarClick}
-                      >
-                        {editing ? 'Guardar' : 'Modificar'}
-                      </button>
-                      <button
-                        className="text-red-700 text-center text-md m-2"
-                        onClick={handleEliminarClick}
-                      >
-                        Eliminar
-                      </button>
-                </tr>
-                <tr className="border-b dark:border-neutral-500">
-                  <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  {editing ? ( <input
-                  type="text"
-                  name="nombre"
-                  value={formData.nombre}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'mark'
-                   )}
-                   </td> 
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="apellido"
-                  value={formData.apellido}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'smith'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="genero"
-                  value={formData.genero}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'masculino'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="nombreTutor"
-                  value={formData.nombretutor}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'oscar sanchez'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="date"
-                  name="fechaNacimiento"
-                  value={formData.fechaNacimiento}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   '11-10-2011'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="nivelEducacion"
-                  value={formData.nivelEducacion}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'cuna'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="number"
-                  name="telefonoContacto"
-                  value={formData.telefonoContacto}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   '155-154947'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'mark@gmail.com'
-                   )}
-                  </td>
-                  <button
-                        className="text-green-700 text-center text-md m-2"
-                        onClick={editing ? handleGuardarClick : handleModificarClick}
-                      >
-                        {editing ? 'Guardar' : 'Modificar'}
-                      </button>
-                      <button
-                        className="text-red-700 text-center text-md m-2"
-                        onClick={handleEliminarClick}
-                      >
-                        Eliminar
-                      </button>
-                </tr>
-                <tr className="border-b dark:border-neutral-500">
-                  <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  {editing ? ( <input
-                  type="text"
-                  name="nombre"
-                  value={formData.nombre}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'mark'
-                   )}
-                   </td> 
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="apellido"
-                  value={formData.apellido}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'smith'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="genero"
-                  value={formData.genero}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'masculino'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="nombreTutor"
-                  value={formData.nombretutor}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'oscar sanchez'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="date"
-                  name="fechaNacimiento"
-                  value={formData.fechaNacimiento}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   '11-10-2011'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="text"
-                  name="nivelEducacion"
-                  value={formData.nivelEducacion}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'cuna'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="number"
-                  name="telefonoContacto"
-                  value={formData.telefonoContacto}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   '155-154947'
-                   )}
-                  </td>
-                  <td className="whitespace-nowrap px-6 py-4">
-                  {editing ? ( <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  />
-                  ) : (
-                   'mark@gmail.com'
-                   )}
-                  </td>
-                  <button
-                        className="text-green-700 text-center text-md m-2"
-                        onClick={editing ? handleGuardarClick : handleModificarClick}
-                      >
-                        {editing ? 'Guardar' : 'Modificar'}
-                      </button>
-                      <button
-                        className="text-red-700 text-center text-md m-2"
-                        onClick={handleEliminarClick}
-                      >
-                        Eliminar
-                      </button>
-                </tr>
-               
-              </tbody>
-            </table>
+                  </svg>
+                </div>
+                <div className="flex-auto my-1">
+                  <span>Jardín</span>
+                </div>
+              </div>
+
+
+              <div
+                className={`text-blue-400 flex relative px-4 hover:bg-gray-700 cursor-pointer ${
+                  nivel === 'guarderia' && 'bg-gray-700'
+                }`}
+                onClick={() => setNivel('guarderia')}
+              >
+                <div className="mr-4 my-auto">
+                  <svg
+                    className="fill-current h-5 w-5"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                  
+                  </svg>
+                </div>
+                <div className="flex-auto my-1">
+                  <span>Guarderia</span>
+                </div>
+              </div>
+      
+            </ul>
           </div>
+        </div>
+      </nav>
+      <div className="flex flex-col w-full">
+      
+        <div className="text-white bg-blue-400 h-[20%] flex w-full items-end ">
+          <div className="flex overflow-hidden  h-12 ml-2 ">
+            <button
+              className={`mx-3 border-b-2 border-white ${nivel === 'jardin' && 'border-blue-400'}`}
+              onClick={() => setNivel('jardin')}
+            >
+              <span>Jardín</span>
+            </button>
+
+            <button
+              className={`mx-3 border-b-2 border-white ${nivel === 'cuna' && 'border-blue-400'}`}
+              onClick={() => setNivel('cuna')}
+            >
+              <span>Cuna</span>
+            </button>
+            
+            <button
+              className={`mx-3 border-b-2 border-white ${nivel === 'guarderia' && 'border-blue-400'}`}
+              onClick={() => setNivel('guarderia')}
+            >
+              <span>guarderia</span>
+            </button>
+            
+
+           
+          </div>
+        </div>
+        <div className="flex-auto p-4">
+          <table className="min-w-full border rounded-lg overflow-hidden">
+            <thead className="bg-gray-800 text-white">
+              <tr>
+                <th className=" py-2 px-4">Nombre</th>
+                <th className=" py-2 px-4">Apellido</th>
+                <th className=" py-2 px-4">Genero</th>
+                <th className=" py-2 px-4">Correo Electrónico</th>
+                <th className=" py-2 px-4">Nombre del Tutor</th>
+                <th className=" py-2 px-4">Teléfono</th>
+                <th className=" py-2 px-4">Acciones</th>
+              </tr>
+            </thead>
+            <tbody className="bg-gray-200">
+              {usuarios.map((usuario) => (
+                <tr key={usuario._id} className="text-black">
+                  <td className=" py-2 px-4 text-center">{usuario.nombre}</td>
+                  <td className=" py-2 px-4 text-center">{usuario.apellido}</td>
+                  <td className=" py-2 px4- text-center">{usuario.genero}</td>
+                  <td className=" py-2 px-4 text-center">{usuario.email}</td>
+                  <td className=" py-2 px-4 text-center">{usuario.nombreTutor}</td>
+                  <td className=" py-2 px-4 text-center">{usuario.telefono}</td>
+                  <td className=" py-2 px-4 text-center">
+                  <button
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2"
+            onClick={() => handleUpdateClick(usuario._id)}
+          >
+            Modificar
+          </button>
+                    <button
+                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                    onClick={() => eliminarUsuario(usuario._id)}
+                      >
+                    Eliminar
+                   </button>
+
+                  </td>
+                  
+                </tr>
+              ))}
+            </tbody>
+            
+          </table>
+          {idUsuarioActualizar && (
+        <div className="flex-auto p-4">
+          <h2 className='bg-blue-500 w-[146px] h-[30px] flex justify-center items-center rounded-lg  mb-[26px] text-white'>Modificar Usuario</h2>
+          <form onSubmit={(e) => handleUpdateClick(e)}className='flex flex-col'>
+            <label>Nombre:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={nombreActualizar}
+              onChange={(e) => setNombreActualizar(e.target.value)}
+            />
+             <label>Apellido:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={apellidoActualizar}
+              onChange={(e) => setApellidoActualizar(e.target.value)}
+            />
+              <label>Genero:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={generoActualizar}
+              onChange={(e) => setGeneroActualizar(e.target.value)}
+              
+            />
+               <label>Email:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={emailActualizar}
+              onChange={(e) => setEmailActualizar(e.target.value)}
+            />
+             <label>Fecha de nacimiento:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="date"
+              value={nacimiento}
+              onChange={(e) => setNacimiento(e.target.value)}
+            />
+             <label>Nivel:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={nivel}
+              onChange={(e) => setNivel(e.target.value)}
+            />
+              <label>Nombre de tutor:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={nombreTutorActualizar}
+              onChange={(e) => setNombreTutorActualizar(e.target.value)}
+            />
+              <label>telefono:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={telefonoActualizar}
+              onChange={(e) => setTelefonoActualizar(e.target.value)}
+            />
+            
+
+
+          
+            <button className='w-[10%] mt-[10px] bg-green-200 rounded-lg text-white' type="submit">Guardar cambios</button>
+          </form>
+        </div>
+      )}
         </div>
       </div>
     </div>
-    </div>
-  )
-}
-export default Administrador
+  
+  );
+};
+export default Administrador ;

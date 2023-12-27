@@ -9,7 +9,9 @@ import { Admission } from "./pages/Admission.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import { Login } from "./pages/Login.jsx";
 import { Signup } from "./pages/Signup.jsx";
-import Administrador from "./pages/Administrador.jsx";
+import Administrador  from "./pages/Administrador.jsx";
+import Modal from "./pages/Modal.jsx"
+
 const App = () => {
   return (
     <>
@@ -25,6 +27,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Signup />} />
           <Route path="/administrador" element={<Administrador />} />
+          <Route path="/modal" element={<Modal />} />
         </Routes>
         <Footer />
       </Router>
