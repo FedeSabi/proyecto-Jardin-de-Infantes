@@ -6,6 +6,7 @@ export const autenticacion = async (req, res) => {
 
   try {
     const user = await User.findOne({ email });
+    
 
     if (user && user.password === password) {
     
