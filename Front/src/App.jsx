@@ -9,6 +9,7 @@ import { Admission } from "./pages/Admission.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import { Login } from "./pages/Login.jsx";
 import { Signup } from "./pages/Signup.jsx";
+import { Administrador } from "./pages/Administrador.jsx";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Signup />} />
+          <Route path="/Administrador" element={<Administrador />} />
         </Routes>
         <Footer />
       </Router>
