@@ -1,4 +1,4 @@
-// coneccion a mongo atlas
+// conexion a mongo atlas
 
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';

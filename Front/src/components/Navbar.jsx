@@ -42,8 +42,13 @@ export const Navbar = () => {
             </li>
             <li>
               <Link className="text-white hover:text-black" to="/login">
-                Login
+                Administrador
                 {/* hacer un IF, si no está logueado mostrar "Login", si ya está logueado mostrar la foto de perfil del usuario */}
+              </Link>
+            </li>
+            <li>
+              <Link className="text-white hover:text-black" to="/modal">
+                Modal
               </Link>
             </li>
           </ul>
