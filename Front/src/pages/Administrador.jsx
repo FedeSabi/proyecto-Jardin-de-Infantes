@@ -257,6 +257,18 @@ const Administrador = () => {
               value={nivel}
               onChange={(e) => setNivel(e.target.value)}
             />
+              <label>Nombre de tutor:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={nombreTutorActualizar}
+              onChange={(e) => setNombreTutorActualizar(e.target.value)}
+            />
+              <label>telefono:</label>
+            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              type="text"
+              value={telefonoActualizar}
+              onChange={(e) => setTelefonoActualizar(e.target.value)}
+            />
             
 
 
