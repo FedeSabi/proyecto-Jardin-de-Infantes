@@ -4,12 +4,14 @@ import mongoose from 'mongoose';
 const userSchema = new mongoose.Schema({
   nombre : String,
   apellido : String,
+  password : String,
   genero :String,
   nacimiento : Date,
-  nivel : String,
+  nombreTutor :String,
   telefono : String,
   email : String,
-  password: String
+  nivel : String,
+ 
 });
 
 const User = mongoose.model('usuarios', userSchema);

@@ -5,12 +5,7 @@ import { Link } from 'react-router-dom';
 export const Signup = () => {
 
     const [formData, setFormData] = useState({
-        nombre: '',
-        apellido: '',
-        genero: '',
-        nacimiento: '',
-        nivel:'',
-        telefono:'',
+      
         email:'',
         password:''
     });
@@ -45,84 +40,12 @@ export const Signup = () => {
                 REGISTRO
                 </h2>
                 <form onSubmit={handleFormSubmit} className="p-3 flex flex-col gap-3">
-                            <div className="mb-3 flex flex-col ">
-                                <label htmlFor="nombre">
-                                    <strong>Nombre</strong>
-                                </label>
-                                <input
-                                    type="text"
-                                    placeholder="Ingrese su nombre"
-                                    name="nombre"
-                                    className="border-2 p-1"
-                                    value={formData.nombre} 
-                                    onChange={handleInputChange}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3 flex flex-col ">
-                                <label htmlFor="apellido">
-                                    <strong>Apellido</strong>
-                                </label>
-                                <input
-                                    type="text"
-                                    placeholder="Ingrese su apellido"
-                                    name="apellido"
-                                    className="border-2 p-1"
-                                    value={formData.apellido} 
-                                    onChange={handleInputChange}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3 flex flex-col ">
-                                <label htmlFor="opciones">
-                                    <strong>Género</strong>
-                                </label>
-                                <select id="opciones" name="opciones" className='overflow-hidden border-2 p-2' value={formData.genero} onChange={handleInputChange}>
-                                    <option value="opcion1">Masculino</option>
-                                    <option value="opcion2">Femenino</option>
-                                    <option value="opcion3">Otro</option>
-                                </select>
-                            </div>
-                            <div className="mb-3 flex flex-col ">
-                                <label htmlFor="nacimiento">
-                                    <strong>Fecha Nacimiento</strong>
-                                </label>
-                                <input
-                                    type="date"
-                                    placeholder="Ingrese su genero"
-                                    name="nacimiento"
-                                    className="border-2 p-1"
-                                    value={formData.nacimiento} 
-                                    onChange={handleInputChange}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3 flex flex-col ">
-                                <label htmlFor="opciones">
-                                    <strong>Nivel</strong>
-                                </label>
-                                <select id="opciones2" name="opciones2" className='overflow-hidden border-2 p-2' value={formData.nivel} onChange={handleInputChange}>
-                                    <option value="opcion1">Cuna</option>
-                                    <option value="opcion2">Jardín</option>
-                                    <option value="opcion3">Guardería</option>
-                                    <option value="opcion4">Escuela de Padres</option>
-                                    <option value="opcion5">Talleres</option>
-                                </select>
-                            </div>
-                            <div className="mb-3 flex flex-col">
-                                <label htmlFor="telefono">
-                                    <strong>Teléfono</strong>
-                                </label>
-                                <input
-                                    type="text"
-                                    placeholder="Ingrese su número telefónico"
-                                    name="telefono"
-                                    className="border-2 p-1"
-                                    value={formData.telefono} 
-                                    onChange={handleInputChange}
-                                    required
-                                />
-                            </div>
+                            
+                           
+                        
+                            
+                           
+                            
                             <div className="mb-3 flex flex-col ">
                                 <label htmlFor="email">
                                     <strong>E-mail</strong>

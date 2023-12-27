@@ -9,7 +9,7 @@ export const Navbar = () => {
             <img className="w-24" src="/logo.svg" alt="logo" />
           </Link>
 
-          <ul className="items-center hidden gap-4 lg:flex">
+          <ul className="hidden items-center gap-4 lg:flex">
             <li>
               <Link className="font-medium" to="/">
                 Inicio
