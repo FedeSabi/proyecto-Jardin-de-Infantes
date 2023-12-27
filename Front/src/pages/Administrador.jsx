@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Administrador = () => {
   const [usuarios, setUsuarios] = useState([]);
@@ -77,7 +77,7 @@ const Administrador = () => {
             <ul className="relative m-0 p-0 list-none h-full mt-[30%]">
              
               <div
-                className={`text-blue-400 flex relative px-4 hover:bg-gray-700 cursor-pointer ${
+                className={`text-white flex relative px-4 hover:bg-gray-700 cursor-pointer ${
                   nivel === 'cuna' && 'bg-gray-700'
                 }`}
                 onClick={() => setNivel('cuna')}
@@ -98,7 +98,7 @@ const Administrador = () => {
               </div>
 
               <div
-                className={`text-blue-400 flex relative px-4 hover:bg-gray-700 cursor-pointer ${
+                className={`text-white flex relative px-4 hover:bg-gray-700 cursor-pointer ${
                   nivel === 'jardin' && 'bg-gray-700'
                 }`}
                 onClick={() => setNivel('jardin')}
@@ -120,7 +120,7 @@ const Administrador = () => {
 
 
               <div
-                className={`text-blue-400 flex relative px-4 hover:bg-gray-700 cursor-pointer ${
+                className={`text-white flex relative px-4 hover:bg-gray-700 cursor-pointer ${
                   nivel === 'guarderia' && 'bg-gray-700'
                 }`}
                 onClick={() => setNivel('guarderia')}
@@ -135,7 +135,7 @@ const Administrador = () => {
                   
                   </svg>
                 </div>
-                <div className="flex-auto my-1">
+                <div className="flex-auto my-1 ">
                   <span>Guarderia</span>
                 </div>
               </div>
@@ -146,7 +146,7 @@ const Administrador = () => {
       </nav>
       <div className="flex flex-col w-full">
       
-        <div className="text-white bg-blue-400 h-[20%] flex w-full items-end ">
+        <div className="text-white  bg-blue-400 h-36 flex w-full items-end no-underline ">
           <div className="flex overflow-hidden  h-12 ml-2 ">
             <button
               className={`mx-3 border-b-2 border-white ${nivel === 'jardin' && 'border-blue-400'}`}
@@ -168,9 +168,6 @@ const Administrador = () => {
             >
               <span>guarderia</span>
             </button>
-            
-
-           
           </div>
         </div>
         <div className="flex-auto p-4">
@@ -218,62 +215,58 @@ const Administrador = () => {
           </table>
           {idUsuarioActualizar && (
         <div className="flex-auto p-4">
-          <h2 className='bg-blue-500 w-[146px] h-[30px] flex justify-center items-center rounded-lg  mb-[26px] text-white'>Modificar Usuario</h2>
+          <h2 className='bg-blue-500 w-[150px] h-[40px] flex justify-center items-center rounded-lg  mb-[26px] text-white'>Modificar Usuario</h2>
           <form onSubmit={(e) => handleUpdateClick(e)}className='flex flex-col'>
-            <label>Nombre:</label>
-            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+            <label className='mb-2'>Nombre:</label>
+            <input className='w-1/5 h-7 rounded-lg border border-solid border-gray-500'
               type="text"
               value={nombreActualizar}
               onChange={(e) => setNombreActualizar(e.target.value)}
             />
-             <label>Apellido:</label>
-            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+             <label className='mb-2 mt-2'>Apellido:</label>
+            <input className='w-1/5 h-7 rounded-lg border border-solid border-gray-500'
               type="text"
               value={apellidoActualizar}
               onChange={(e) => setApellidoActualizar(e.target.value)}
             />
-              <label>Genero:</label>
-            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              <label className='mb-2 mt-2'>Genero:</label>
+            <input className='w-1/5 h-7 rounded-lg border border-solid border-gray-500'
               type="text"
               value={generoActualizar}
               onChange={(e) => setGeneroActualizar(e.target.value)}
               
             />
-               <label>Email:</label>
-            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+               <label className='mb-2 mt-2'>Email:</label>
+            <input className='w-1/5 h-7 rounded-lg border border-solid border-gray-500'
               type="text"
               value={emailActualizar}
               onChange={(e) => setEmailActualizar(e.target.value)}
             />
-             <label>Fecha de nacimiento:</label>
-            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+             <label className='mb-2 mt-2'>Fecha de nacimiento:</label>
+            <input className='w-1/5 h-7 rounded-lg border border-solid border-gray-500'
               type="date"
               value={nacimiento}
               onChange={(e) => setNacimiento(e.target.value)}
             />
-             <label>Nivel:</label>
-            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+             <label className='mb-2 mt-2'>Nivel:</label>
+            <input className='w-1/5 h-7 rounded-lg border border-solid border-gray-500'
               type="text"
               value={nivel}
               onChange={(e) => setNivel(e.target.value)}
             />
-              <label>Nombre de tutor:</label>
-            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              <label className='mb-2 mt-2'>Nombre de tutor:</label>
+            <input className='w-1/5 h-7 rounded-lg border border-solid border-gray-500'
               type="text"
               value={nombreTutorActualizar}
               onChange={(e) => setNombreTutorActualizar(e.target.value)}
             />
-              <label>telefono:</label>
-            <input className='b-[1px] br-[6px] w-[14%] rounded-lg border border-solid border-gray-500'
+              <label className='mb-2 mt-2'>telefono:</label>
+            <input className='w-1/5 h-7 rounded-lg border border-solid border-gray-500'
               type="text"
               value={telefonoActualizar}
               onChange={(e) => setTelefonoActualizar(e.target.value)}
             />
-            
-
-
-          
-            <button className='w-[10%] mt-[10px] bg-green-200 rounded-lg text-white' type="submit">Guardar cambios</button>
+            <button className='w-[20%] h-10 mt-[10px] bg-green-500 rounded-lg text-white' type="submit">Guardar cambios</button>
           </form>
         </div>
       )}
