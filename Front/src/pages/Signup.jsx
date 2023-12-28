@@ -41,11 +41,6 @@ export const Signup = () => {
                 </h2>
                 <form onSubmit={handleFormSubmit} className="p-3 flex flex-col gap-3">
                             
-                           
-                        
-                            
-                           
-                            
                             <div className="mb-3 flex flex-col ">
                                 <label htmlFor="email">
                                     <strong>E-mail</strong>

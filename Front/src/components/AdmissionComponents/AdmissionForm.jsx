@@ -146,9 +146,6 @@ export const AdmissionForm = () => {
                 <option value="cuna">Cuna</option>
                 <option value="jardin">Jardin</option>
                 <option value="guarderia">Guarderia</option>
-                <option value="E.temprana">E.temprana</option>
-                <option value="talleres">Talleres</option>
-                <option value="cocina">Cocina</option>
               </select>
             </div>
 

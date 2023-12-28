@@ -83,7 +83,7 @@ export const deleteUser = async (req, res) => {
   const { id } = req.params;
 
  
-  await User.findByIdAndRemove(id);
+  await User.findByIdAndDelete(id); // se modifico porque quedo obsoleto findByIdAndRemove
 
   res.json({ message: 'Usuario eliminado exitosamente' });
 };
