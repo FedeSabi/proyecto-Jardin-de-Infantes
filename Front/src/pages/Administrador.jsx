@@ -28,11 +28,11 @@ const Administrador = () => {
         telefono: telefonoActualizar,
       };
       await axios.put(
-        `http://localhost:3000/actualizar/${idUsuarioActualizar}`,
+        `https://jardin-infantes.onrender.com/actualizar/${idUsuarioActualizar}`,
         updatedUser,
       );
       const response = await axios.get(
-        `http://localhost:3000/usuarios/${nivel}`,
+        `https://jardin-infantes.onrender.com/usuarios/${nivel}`,
       );
       setUsuarios(response.data);
       setIdUsuarioActualizar(null);
@@ -53,7 +53,7 @@ const Administrador = () => {
     const obtenerUsuarios = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/usuarios/${nivel}`,
+          `https://jardin-infantes.onrender.com/usuarios/${nivel}`,
         );
         setUsuarios(response.data);
       } catch (error) {
@@ -66,7 +66,7 @@ const Administrador = () => {
 
   const eliminarUsuario = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/eliminar/usuario/${id}`);
+      await axios.delete(`https://jardin-infantes.onrender.com/eliminar/usuario/${id}`);
       setUsuarios(usuarios.filter((usuario) => usuario._id !== id));
       setIdUsuarioEliminar(null); // Limpia el estado después de eliminar
     } catch (error) {
