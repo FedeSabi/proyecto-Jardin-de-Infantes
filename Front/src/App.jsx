@@ -11,6 +11,7 @@ import { Login } from "./pages/Login.jsx";
 import { Signup } from "./pages/Signup.jsx";
 import { Administrador } from "./pages/Administrador.jsx";
 
+
 const App = () => {
   return (
     <>

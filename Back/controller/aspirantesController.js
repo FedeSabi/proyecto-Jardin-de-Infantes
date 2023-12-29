@@ -83,7 +83,7 @@ export const deleteUser = async (req, res) => {
   const { id } = req.params;
 
  
-  await User.findByIdAndRemove(id);
+ await User.findOneAndDelete({ _id: id });;
 
   res.json({ message: 'Usuario eliminado exitosamente' });
 };

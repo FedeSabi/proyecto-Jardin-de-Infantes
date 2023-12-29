@@ -11,46 +11,42 @@ export const Navbar = () => {
 
           <ul className="hidden items-center gap-4 lg:flex">
             <li>
-              <Link className="font-medium" to="/">
+              <Link className="text-blue-500 hover:text-red-500" to="/">
                 Inicio
               </Link>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/nosotros">
+              <Link className="text-blue-500 hover:text-red-500" to="/nosotros">
                 Nosotros
               </Link>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/servicios">
+              <Link className="text-blue-500 hover:text-red-500" to="/servicios">
                 Servicios
               </Link>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/facilities">
+              <Link className="text-blue-500 hover:text-red-500" to="/facilities">
                 Instalaciones
               </Link>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/admission">
+              <Link className="text-blue-500 hover:text-red-500" to="/admission">
                 Admisión
               </Link>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/contact">
+              <Link className="text-blue-500 hover:text-red-500" to="/contact">
                 Contacto
               </Link>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/login">
+              <Link className="text-blue-500 hover:text-red-500" to="/login">
                 Administrador
                 {/* hacer un IF, si no está logueado mostrar "Login", si ya está logueado mostrar la foto de perfil del usuario */}
               </Link>
             </li>
-            <li>
-              <Link className="text-white hover:text-black" to="/modal">
-                Modal
-              </Link>
-            </li>
+          
           </ul>
 
           <button className="lg:hidden">
