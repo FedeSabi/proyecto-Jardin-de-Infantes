@@ -4,11 +4,15 @@
 @tailwind utilities;
 
 @layer components {
-    .line {
-        @apply h-[1px] w-full bg-[#EEEEEE] my-6 xl:hidden;
-    }
+  .line {
+    @apply my-6 h-[1px] w-full bg-[#EEEEEE] xl:hidden;
+  }
 
-    .footerLinks {
-        @apply text-[#7C858E] tracking-[0.08px] leading-6;
-    }
+  .footerLinks {
+    @apply leading-6 tracking-[0.08px] text-[#7C858E];
+  }
+}
+
+.active {
+  color: black;
 }
