@@ -1,122 +1,147 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setScrolled] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
   };
-  return (
-    <div className="relative">
-      <nav className="z-50 lg:fixed lg:left-1/2 lg:top-[55px] lg:w-[56.25rem] lg:-translate-x-1/2 lg:-translate-y-1/2 lg:transform lg:rounded-xl lg:bg-gray-200 lg:bg-opacity-10 lg:backdrop-blur-md xl:w-[79.25rem]">
-        <div className="flex items-center justify-between px-[27px] py-4">
-          <Link to="/">
-            <span className="font-bold leading-8 lg:text-2xl">
-              Nubes de algodón
-            </span>
-          </Link>
 
-          <ul className="hidden items-center gap-4 lg:flex">
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const shouldCollapseNavbar = scrollPosition > 0;
+
+      setScrolled(shouldCollapseNavbar);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <div
+      className={`fixed top-0 z-50 w-full p-4 shadow-md lg:left-1/2 lg:w-[56.25rem] lg:-translate-x-1/2 lg:-translate-y-1/2 lg:transform lg:transition-all lg:duration-300 ${
+        isScrolled
+          ? "w-full rounded-none bg-white lg:top-[40px] lg:w-screen"
+          : "w-full bg-white lg:top-[55px] lg:rounded-xl lg:bg-gray-200 lg:bg-opacity-10 lg:px-4 lg:backdrop-blur-md xl:w-[80%] 2xl:w-[79.25rem]"
+      }`}
+    >
+      <nav className="flex items-center justify-between 2xl:mx-auto 2xl:max-w-[79.25rem]">
+        <NavLink to="/">
+          <img className="w-24" src="/logo.svg" alt="logo" />
+        </NavLink>
+
+        <img
+          className={`z-50 lg:hidden ${isMenuOpen ? "hidden" : ""}`}
+          src="/Hamburger.svg"
+          alt="Hamburger icon"
+          onClick={toggleMenu}
+        />
+
+        <img
+          className={`z-50 lg:hidden ${isMenuOpen ? "" : "hidden"}`}
+          src="/CloseHamburguer.svg"
+          alt="close nav button"
+          onClick={toggleMenu}
+        />
+
+        <div
+          className={`${
+            isMenuOpen
+              ? "translate-x-0 transition-transform lg:transition-none"
+              : "translate-x-full transition-transform md:transition-none lg:translate-x-0"
+          } absolute right-0 top-0 h-screen w-2/3 bg-[#7C858E] px-10 py-[80px] lg:relative lg:h-auto lg:w-auto lg:gap-4 lg:bg-transparent lg:px-0 lg:py-0`}
+        >
+          <ul className="space-y-10 lg:flex lg:space-x-4 lg:space-y-0">
             <li>
-              <Link className="font-medium" to="/">
+              <NavLink
+                className="text-white lg:text-black lg:hover:text-blue-500"
+                to="/"
+              >
                 Inicio
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/nosotros">
+              <NavLink
+                className="text-white lg:text-black lg:hover:text-blue-500"
+                to="/nosotros"
+              >
                 Nosotros
-              </Link>
-            </li>
-            <li
-              className={`dropdown_menu flex cursor-pointer items-center gap-[14.4px] ${
-                isDropdownOpen ? "open" : ""
-              }`}
-              onClick={toggleDropdown}
-            >
-              <span className="text-white hover:text-black">
-                <Link to="/servicios">Servicios</Link>
-              </span>
-              <img src="/Arrow down.svg" alt="Arrow down" />
-              {isDropdownOpen && (
-                <ul className="dropdown_content space-y-2 lg:absolute lg:top-[70px] lg:w-44 lg:rounded-lg lg:bg-white lg:p-4">
-                  <li>
-                    <Link className="text-black" to="/cuna">
-                      Cuna
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="text-black" to="/guarderia">
-                      Guardería
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="text-black" to="/jardín">
-                      Jardín
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-black"
-                      to="/estimulación psicopedagógica"
-                    >
-                      Estimulación psicopedagógica
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="text-black" to="/estimulación temprana">
-                      Estimulación temprana
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="text-black" to="/talleres">
-                      Talleres
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="text-black" to="/escuela de padres">
-                      Escuela de padres
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="text-black" to="/cocina">
-                      Cocina
-                    </Link>
-                  </li>
-                </ul>
-              )}
+              </NavLink>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/facilities">
+              <NavLink
+                className="text-white lg:text-black lg:hover:text-blue-500"
+                to="/servicios"
+              >
+                Servicios
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="text-white lg:text-black lg:hover:text-blue-500"
+                to="/facilities"
+              >
                 Instalaciones
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/admission">
+              <NavLink
+                className="text-white lg:text-black lg:hover:text-blue-500"
+                to="/admission"
+              >
                 Admisión
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/galería">
-                Galería
-              </Link>
-            </li>
-            <li>
-              <Link className="text-white hover:text-black" to="/contact">
+              <NavLink
+                className="text-white lg:text-black lg:hover:text-blue-500"
+                to="/contact"
+              >
                 Contacto
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="text-white hover:text-black" to="/login">
-                Login
-                {/* hacer un IF, si no está logueado mostrar "Login", si ya está logueado mostrar la foto de perfil del usuario */}
-              </Link>
+              <NavLink
+                className="text-white lg:text-black lg:hover:text-blue-500"
+                to="/login"
+              >
+                Administrador
+              </NavLink>
             </li>
           </ul>
-          
-          <button className="lg:hidden">
-            <img src="/Hamburger.svg" alt="Hamburger icon" />
-          </button>
+
+          <div className=" mt-[224px] lg:hidden">
+            <span className="leading-[24px] tracking-[0.08px] text-white">
+              Síguenos
+            </span>
+            <div className="mt-4 flex gap-3 text-[#7C858E]">
+              <a
+                className="flex items-center justify-center w-8 h-8 bg-white rounded-full"
+                href="#"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                className="flex items-center justify-center w-8 h-8 bg-white rounded-full"
+                href="#"
+              >
+                <i className="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                className="flex items-center justify-center w-8 h-8 bg-white rounded-full"
+                href="#"
+              >
+                <i className="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
