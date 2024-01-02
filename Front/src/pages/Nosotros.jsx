@@ -1,23 +1,15 @@
-import { Link } from "react-router-dom";
-
 const Nosotros = () => {
   return (
-    <section className="overflow-x-hidden" id="header">
-      <header className="h-[376px] bg-discos bg-cover bg-center">
-        <div className="mx-auto flex h-72 max-w-[76rem] pb-[60px] pt-[172px]">
-          <h1 className="ml-[112px] text-[58px] font-semibold leading-[72px] text-white">
+    <section className="overflow-x-hidden">
+      <header className="h-[376px] bg-discos bg-cover bg-center" id="header">
+        <div className="mx-auto max-w-[76rem] pt-[160px]">
+          <h1 className="text-[58px] font-semibold leading-[72px] text-white">
             Guardería infantil educativo desde Nubes de Algodón
           </h1>
         </div>
       </header>
-      <div className="w-232 mx-auto mt-[40px] flex max-w-[76rem] gap-6 px-[112px]">
-        <Link className="font-medium text-black hover:text-gray-300" to="/">
-          Home
-        </Link>
-        <p>/</p>
-        <p className="text-[#7C858E]">Nosotros</p>
-      </div>
-      <p className="mx-auto mt-[112px] max-w-[76rem] px-[112px]">
+
+      <p className="mx-auto mt-[112px] max-w-[76rem]">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime porro,
         nisi architecto reprehenderit deleniti excepturi nulla perferendis dicta
         voluptates unde consequuntur necessitatibus? Omnis placeat explicabo
@@ -31,10 +23,10 @@ const Nosotros = () => {
       <img
         src="/nosotros_ninios.png"
         alt="kids playing"
-        className="mx-auto mt-[56px] max-w-[76rem] px-[112px]"
+        className="mx-auto mt-[56px] max-w-[76rem]"
       />
       <div className="mx-[auto] mt-[64px] flex max-w-[76rem] justify-end">
-        <p className="mr-[112px] h-[96px] w-[592px] text-[20px] font-normal leading-[32px]">
+        <p className=" h-[96px] w-[592px] text-[20px] font-normal leading-[32px]">
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur ma Excepteur sint occaecat cupidatat non
           proident.
@@ -62,7 +54,8 @@ const Nosotros = () => {
           </p>
         </div>
       </div>
-      <div className="mb-[8rem] ml-[112px] flex max-w-[72rem] flex-wrap justify-between">
+
+      <div className="mx-auto mb-[8rem] mt-[144px] flex max-w-[76rem] flex-wrap justify-between">
         <div className="flex max-w-[592px] flex-col justify-end gap-[2rem]">
           <h2 className="text-[36px] font-[500] leading-[48px]">
             Nuestra Visión
@@ -84,11 +77,13 @@ const Nosotros = () => {
           alt="maestra enseñando"
         />
       </div>
-      <p className="mx-[112px]  mb-[8rem] h-[96px] max-w-[72rem] text-[36px] leading-[48px] ">
+
+      <p className="mx-auto mb-[8rem] h-[96px] max-w-[76rem] text-[36px] leading-[48px] ">
         Un espacio de aprendizaje y diversión para los pequeños de nuestra
         guardería
       </p>
-      <div className=" max-w[72rem] relative mx-[112px] mb-[5rem] flex h-[542px]">
+
+      <div className=" relative mx-auto mb-[80px] flex h-[542px] max-w-[76rem]">
         <img
           src="/nosotros_ninio_armando_casa.png"
           className="absolute bottom-0 left-0 max-h-[504px]"
@@ -105,7 +100,8 @@ const Nosotros = () => {
           proident, sunt in culpa qui officia deserunt mollit anim id es.
         </h5>
       </div>
-      <div className="max-w[72rem] mx-[112px] mb-[8rem] flex flex-wrap items-center justify-between">
+
+      <div className="mx-auto mb-[8rem] flex max-w-[76rem] flex-wrap items-center  justify-between">
         <h4 className="max-w-[384px] text-[24px] leading-[32px]">
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit,
@@ -121,15 +117,13 @@ const Nosotros = () => {
           alt="jueguetes"
         />
       </div>
-      <h2 className="ml-[112px] text-[36px] leading-[48px]">
-        Nuestras Tutoras
-      </h2>
-      <div class="px-auto min-h-screen max-w-[72rem]">
-        <div class="flex flex-col items-center"></div>
-        <div class="divide-neutral-200 mx-auto mt-8 grid max-w-xl divide-y">
-          <div class="w-[1008px] py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+
+      <div className=" mx-auto max-w-[76rem]">
+        <h2 className="text-[36px] leading-[48px]">Nuestras Tutoras</h2>
+        <div className="mb-[232px] ml-[104px] mt-[72px]">
+          <div>
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
                 <span className="relative">
                   <img
                     src="/nosotros_tutora1.png"
@@ -142,15 +136,15 @@ const Nosotros = () => {
                   {" "}
                   Stephany Rodríguez
                 </span>
-                <span class="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -158,14 +152,14 @@ const Nosotros = () => {
                   </svg>
                 </span>
               </summary>
-              <p class="text-neutral-600 group-open:animate-fadeIn mt-3">
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
                 Lorem ipsum dolor sit amet.
               </p>
             </details>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
                 <span className="relative">
                   <img
                     src="/nosotros_tutora2.png"
@@ -178,15 +172,15 @@ const Nosotros = () => {
                   {" "}
                   Noemi Pérez
                 </span>
-                <span class="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -194,14 +188,14 @@ const Nosotros = () => {
                   </svg>
                 </span>
               </summary>
-              <p class="text-neutral-600 group-open:animate-fadeIn mt-3">
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
                 Lorem ipsum dolor sit amet.
               </p>
             </details>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
                 <span className="relative">
                   <img
                     src="/nosotros_tutora3.png"
@@ -214,15 +208,15 @@ const Nosotros = () => {
                   {" "}
                   Dafne Gómez
                 </span>
-                <span class="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -230,14 +224,14 @@ const Nosotros = () => {
                   </svg>
                 </span>
               </summary>
-              <p class="text-neutral-600 group-open:animate-fadeIn mt-3">
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
                 Lorem ipsum dolor sit amet.
               </p>
             </details>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
                 <span className="relative">
                   <img
                     src="/nosotros_tutora4.png"
@@ -250,15 +244,15 @@ const Nosotros = () => {
                   {" "}
                   Ivanna Morales
                 </span>
-                <span class="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -266,14 +260,14 @@ const Nosotros = () => {
                   </svg>
                 </span>
               </summary>
-              <p class="text-neutral-600 group-open:animate-fadeIn mt-3">
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
                 Lorem ipsum dolor sit amet.
               </p>
             </details>
           </div>
-          <div class="py-5">
-            <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+          <div className="py-5">
+            <details className="group">
+              <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
                 <span className="relative">
                   <img
                     src="/nosotros_tutora5.png"
@@ -286,15 +280,15 @@ const Nosotros = () => {
                   {" "}
                   Lucía Ramos
                 </span>
-                <span class="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
+                <span className="rounded-full border border-solid border-black p-4 transition hover:bg-[#D9D9D9] group-open:rotate-180">
                   <svg
                     fill="none"
                     height="24"
-                    shape-rendering="geometricPrecision"
+                    shapeRendering="geometricPrecision"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                     viewBox="0 0 24 24"
                     width="24"
                   >
@@ -302,7 +296,7 @@ const Nosotros = () => {
                   </svg>
                 </span>
               </summary>
-              <p class="text-neutral-600 group-open:animate-fadeIn mt-3">
+              <p className="text-neutral-600 group-open:animate-fadeIn mt-3">
                 Lorem ipsum dolor sit amet.
               </p>
             </details>

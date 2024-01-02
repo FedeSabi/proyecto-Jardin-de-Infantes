@@ -1,4 +1,4 @@
-// coneccion a mongo atlas
+// conexion a mongo atlas
 
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
@@ -7,10 +7,7 @@ dotenv.config();
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
-mongoose.connect(MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(MONGODB_URI);
 
 const db = mongoose.connection;
 

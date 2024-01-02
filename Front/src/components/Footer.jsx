@@ -5,10 +5,10 @@ const Footer = () => {
     <footer className="px-4 pb-4 xl:px-0 xl:pb-[80px]">
       <div className=" my-6 hidden h-[1px] w-full bg-[#EEEEEE] xl:block"></div>
 
-      <div className=" relative mx-auto lg:max-w-[54rem] 2xl:max-w-[76rem] xl:flex xl:gap-[168px] xl:py-[80px]">
+      <div className=" relative mx-auto lg:max-w-[54rem] xl:flex xl:gap-[168px] xl:py-[80px] 2xl:max-w-[76rem]">
         <a
           href="#header"
-          className=" absolute right-0 bottom-0 xl:top-[200px] flex h-[2rem] w-[2rem] items-center justify-center rounded-full bg-black"
+          className="absolute bottom-0 right-0 flex h-[2rem] w-[2rem] items-center justify-center rounded-full bg-black xl:top-[200px]"
         >
           <img src="/Alt Arrow Up.svg" alt="Alt Arrow Up" />
         </a>
@@ -129,7 +129,7 @@ const Footer = () => {
 
       <div className="line"></div>
 
-      <div className=" mx-auto lg:max-w-[54rem] 2xl:max-w-[76rem] xl:mt-[100px] xl:flex xl:items-center xl:justify-between">
+      <div className=" mx-auto max-w-[76rem] xl:mt-[100px] xl:flex xl:items-center xl:justify-between">
         <span className="text-[#7C858E] sm:text-center">
           Copyright © {currentYear} Kids by johnnathandesigner. All Rights
           Reserved.

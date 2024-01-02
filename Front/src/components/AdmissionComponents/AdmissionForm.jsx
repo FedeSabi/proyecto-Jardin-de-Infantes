@@ -1,36 +1,62 @@
 import { useState } from "react";
+import axios from "axios";
+
+
 
 export const AdmissionForm = () => {
-  const [nombre, setNombre] = useState("");
-  const [apellido, setApellido] = useState("");
-  const [genero, setGenero] = useState(""); // Nuevo campo de género
-  const [fechaNacimiento, setFechaNacimiento] = useState("");
-  const [nivelEducacion, setNivelEducacion] = useState("");
-  const [nombreTutor, setNombreTutor] = useState("");
-  const [telefonoContacto, setTelefonoContacto] = useState("");
-  const [email, setEmail] = useState("");
+  const [nombre, setnombre] = useState("");
+  const [apellido, setapellido] = useState("");
+  const [genero, setgenero] = useState(""); 
+  const [nacimiento, setnacimiento] = useState("");
+  const [nivel, setnivel] = useState("");
+  const [nombreTutor, setnombreTutor] = useState("");
+  const [telefono, settelefono] = useState("");
+  const [email, setemail] = useState("");
   const [aceptoPoliticaPrivacidad, setAceptoPoliticaPrivacidad] =
     useState(false);
+    const [enviado, setEnviado] = useState(false);
+    const [mensaje, setMensaje] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!aceptoPoliticaPrivacidad) {
-      alert(
-        "Debes aceptar la Política de Privacidad para enviar el formulario.",
-      );
-      return;
-    }
-    // Aquí puedes realizar la lógica para enviar los datos del formulario a través de una API o realizar otras acciones necesarias.
-    console.log("Formulario enviado:", {
-      nombre,
-      apellido,
-      genero,
-      fechaNacimiento,
-      nombreTutor,
-      telefonoContacto,
-      email,
-    });
-  };
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      if (!aceptoPoliticaPrivacidad) {
+        alert("Debes aceptar la Política de Privacidad para enviar el formulario.");
+        return;
+      }
+  
+      try {
+        const response = await axios.post('https://jardin-infantes.onrender.com/registro', {
+          nombre,
+          apellido,
+          genero,
+          nacimiento,
+          nombreTutor,
+          telefono,
+          email,
+          nivel,
+        });
+  
+        console.log('Respuesta del servidor:', response.data);
+  
+        setEnviado(true);
+        setMensaje("¡Formulario enviado con éxito!");
+  
+        setnombre("");
+        setapellido("");
+        setgenero("");
+        setnacimiento("");
+        setnombreTutor("");
+        settelefono("");
+        setemail("");
+        setnivel("");
+        
+      } catch (error) {
+        console.error('Error al enviar el formulario:', error);
+        setMensaje("Hubo un error al enviar el formulario. Inténtalo de nuevo.");
+      }
+    };
+    
 
   return (
     <section className=" mx-auto mb-[288px] mt-[124px] max-w-[76rem]">
@@ -39,6 +65,9 @@ export const AdmissionForm = () => {
           <h3 className=" text-2xl font-medium leading-[32px] tracking-[0.084px]">
             Completa el formulario
           </h3>
+          {enviado && (
+            <div className={`mt-4 ${mensaje.includes("éxito") ? "text-green-600" : "text-red-600"} font-semibold`}>{mensaje}</div>
+          )}
 
           <form className=" mt-11 flex flex-col gap-4" onSubmit={handleSubmit}>
             <div className=" flex flex-col gap-2">
@@ -51,7 +80,7 @@ export const AdmissionForm = () => {
                 id="nombre"
                 value={nombre}
                 placeholder="Nombre"
-                onChange={(e) => setNombre(e.target.value)}
+                onChange={(e) => setnombre(e.target.value)}
                 required
               />
             </div>
@@ -69,7 +98,7 @@ export const AdmissionForm = () => {
                 id="apellido"
                 value={apellido}
                 placeholder="Apellido"
-                onChange={(e) => setApellido(e.target.value)}
+                onChange={(e) => setapellido(e.target.value)}
                 required
               />
             </div>
@@ -81,7 +110,7 @@ export const AdmissionForm = () => {
                   className=" h-10 w-full rounded-[5px] border border-[#D9D9D9] px-2"
                   id="genero"
                   value={genero}
-                  onChange={(e) => setGenero(e.target.value)}
+                  onChange={(e) => setgenero(e.target.value)}
                   required
                 >
                   <option value="">Selecciona el género</option>
@@ -97,8 +126,8 @@ export const AdmissionForm = () => {
                   className=" h-10 w-full rounded-[5px] border border-[#D9D9D9] p-2"
                   type="date"
                   id="fechaNacimiento"
-                  value={fechaNacimiento}
-                  onChange={(e) => setFechaNacimiento(e.target.value)}
+                  value={nacimiento}
+                  onChange={(e) => setnacimiento(e.target.value)}
                   required
                 />
               </div>
@@ -109,14 +138,14 @@ export const AdmissionForm = () => {
               <select
                 className=" h-10 rounded-[5px] border border-[#D9D9D9] px-2"
                 id="nivelEducacion"
-                value={nivelEducacion}
-                onChange={(e) => setNivelEducacion(e.target.value)}
+                value={nivel}
+                onChange={(e) => setnivel(e.target.value)}
                 required
               >
                 <option value="">Selecciona el nivel de educación</option>
-                <option value="preescolar">Preescolar</option>
-                <option value="primaria">Primaria</option>
-                <option value="secundaria">Secundaria</option>
+                <option value="cuna">Cuna</option>
+                <option value="jardin">Jardin</option>
+                <option value="guarderia">Guarderia</option>
               </select>
             </div>
 
@@ -128,7 +157,7 @@ export const AdmissionForm = () => {
                 id="nombreTutor"
                 value={nombreTutor}
                 placeholder=" Nombre del tutor legal"
-                onChange={(e) => setNombreTutor(e.target.value)}
+                onChange={(e) => setnombreTutor(e.target.value)}
                 required
               />
             </div>
@@ -140,8 +169,8 @@ export const AdmissionForm = () => {
                   className=" h-10 w-full rounded-[5px] border border-[#D9D9D9] px-2"
                   type="tel"
                   id="telefonoContacto"
-                  value={telefonoContacto}
-                  onChange={(e) => setTelefonoContacto(e.target.value)}
+                  value={telefono}
+                  onChange={(e) => settelefono(e.target.value)}
                   required
                 />
               </div>
@@ -153,7 +182,7 @@ export const AdmissionForm = () => {
                   type="email"
                   id="email"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => setemail(e.target.value)}
                   required
                 />
               </div>
@@ -175,18 +204,20 @@ export const AdmissionForm = () => {
                 </span>
               </label>
             </div>
-          </form>
-        </div>
-        <div className=" h-[542px] w-[488px]">
-          <img src="/formimg.png" alt="smiling baby" />
-        </div>
-      </div>
-      <button
+            <button
         className=" mt-[68px] w-[592px] rounded-full bg-black py-4 text-white"
         type="submit"
       >
         Solicitar admisión
       </button>
+          </form>
+         
+        </div>
+        <div className=" h-[542px] w-[488px]">
+          <img src="/formimg.png" alt="smiling baby" />
+        </div>
+      </div>
+     
     </section>
   );
 };
