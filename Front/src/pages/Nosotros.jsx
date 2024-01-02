@@ -1,7 +1,7 @@
 const Nosotros = () => {
   return (
     <section className="overflow-x-hidden">
-      <header className="h-[376px] bg-discos bg-cover bg-center">
+      <header className="h-[376px] bg-discos bg-cover bg-center" id="header">
         <div className="mx-auto max-w-[76rem] pt-[160px]">
           <h1 className="text-[58px] font-semibold leading-[72px] text-white">
             Guardería infantil educativo desde Nubes de Algodón

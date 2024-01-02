@@ -1,44 +1,17 @@
-import { useEffect, useState } from "react";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
-  const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Muestra el botón solo cuando el usuario ha bajado cierta distancia
-      const scrollPosition = window.scrollY;
-      setIsVisible(scrollPosition > 200);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Limpia el event listener cuando el componente se desmonta
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-      duration: 1000,
-    });
-  };
   return (
     <footer className="px-4 pb-4 xl:px-0 xl:pb-[80px]">
       <div className=" my-6 hidden h-[1px] w-full bg-[#EEEEEE] xl:block"></div>
 
-      <div className=" relative mx-auto max-w-[76rem] xl:flex xl:gap-[168px] xl:py-[80px]">
-        <button
-          onClick={scrollToTop}
-          className={`absolute right-0 top-[200px] flex h-[2rem] w-[2rem] items-center justify-center rounded-full bg-black ${
-            isVisible ? "visible" : "invisible"
-          }`}
+      <div className=" relative mx-auto lg:max-w-[54rem] xl:flex xl:gap-[168px] xl:py-[80px] 2xl:max-w-[76rem]">
+        <a
+          href="#header"
+          className="absolute bottom-0 right-0 flex h-[2rem] w-[2rem] items-center justify-center rounded-full bg-black xl:top-[200px]"
         >
           <img src="/Alt Arrow Up.svg" alt="Alt Arrow Up" />
-        </button>
+        </a>
         <div className=" xl:w-[353px]">
           <h2 className=" mr-[202px] text-2xl font-bold leading-8 xl:mr-0">
             Nubes de algodón
@@ -122,8 +95,8 @@ const Footer = () => {
 
           <div>
             <h3 className=" mb-4 font-medium tracking-[0.08px]">Síguenos</h3>
-            <ul className=" mt-4 flex gap-x-3">
-              <li className="rounded-full bg-black text-white">
+            <ul className="flex mt-4 gap-x-3">
+              <li className="text-white bg-black rounded-full">
                 <a
                   href="#"
                   className="flex h-[2rem] w-[2rem] items-center justify-center"
@@ -132,7 +105,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li className="rounded-full bg-black text-white">
+              <li className="text-white bg-black rounded-full">
                 <a
                   href="#"
                   className="flex h-[2rem] w-[2rem] items-center justify-center"
@@ -141,7 +114,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li className="rounded-full bg-black text-white">
+              <li className="text-white bg-black rounded-full">
                 <a
                   href="#"
                   className="flex h-[2rem] w-[2rem] items-center justify-center"

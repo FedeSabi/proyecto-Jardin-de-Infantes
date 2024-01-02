@@ -41,7 +41,7 @@ export const Login = () => {
 
   return (
     <>
-      <header className="h-[376px] bg-discos bg-cover bg-center">
+      <header className="h-[376px] bg-discos bg-cover bg-center" id="header">
         <div className="mx-auto flex h-72 max-w-[76rem] pb-[60px] pt-[172px]">
           <h1 className="ml-[112px] text-[58px] font-semibold leading-[72px] text-white">
             Iniciar sesión
