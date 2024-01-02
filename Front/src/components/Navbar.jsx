@@ -32,7 +32,7 @@ export const Navbar = () => {
           : "w-full bg-white lg:top-[55px] lg:rounded-xl lg:bg-gray-200 lg:bg-opacity-10 lg:px-4 lg:backdrop-blur-md xl:w-[80%] 2xl:w-[79.25rem]"
       }`}
     >
-      <nav className="flex items-center justify-between 2xl:mx-auto 2xl:max-w-[79.25rem]">
+      <nav className="flex items-center justify-between lg:max-w-[54rem] lg:mx-auto 2xl:max-w-[79.25rem]">
         <NavLink to="/">
           <img className="w-24" src="/logo.svg" alt="logo" />
         </NavLink>
