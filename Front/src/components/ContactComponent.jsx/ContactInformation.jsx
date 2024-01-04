@@ -1,8 +1,8 @@
 export default function ContactInformation() {
   return (
-    <section className=" mx-auto mt-[100px] flex max-w-[76rem] items-center gap-[153px]">
-      <div className=" w-[488px]">
-        <h1 className=" mt-4 text-4xl font-medium leading-[48px] tracking-[0.09px]">
+    <section className=" mx-auto mt-[100px] flex flex-col-reverse items-center gap-10 lg:gap-[153px] px-5 lg:max-w-[54rem] lg:flex-row lg:px-0 2xl:max-w-[76rem]">
+      <div className="lg:w-[488px]">
+        <h1 className=" text-[30px] lg:mt-4 lg:text-4xl font-medium leading-[48px] tracking-[0.09px]">
           Contáctanos y solicita más información
         </h1>
         <p className=" mt-4 text-lg leading-[32px] tracking-[0.09px]">
@@ -12,18 +12,18 @@ export default function ContactInformation() {
         </p>
 
         <div className=" mt-[56px] flex flex-col gap-4">
-          <div className="flex items-center gap-8 ">
-            <img src="/contact_icon.svg" alt="contact icon" />
+          <div className="flex items-center gap-8">
+            <i className="fa-solid fa-location-dot"></i>
             <p>Dirección</p>
           </div>
 
           <div className="flex items-center gap-8 ">
-            <img src="/contact_icon.svg" alt="contact icon" />
+            <i className="fa-solid fa-phone"></i>
             <p>Número de Teléfono</p>
           </div>
 
           <div className="flex items-center gap-8 ">
-            <img src="/contact_icon.svg" alt="contact icon" />
+            <i className="fa-solid fa-envelope"></i>
             <p>Email</p>
           </div>
         </div>
@@ -43,8 +43,8 @@ export default function ContactInformation() {
         </div>
       </div>
 
-      <div className=" h-[585px] w-[560px]">
-        <img className="w-full " src="/Contact_img.png" alt="Contact image" />
+      <div className=" lg:h-[585px] lg:w-[560px]">
+        <img className="w-full" src="/Contact_img.png" alt="Contact image" />
       </div>
     </section>
   );

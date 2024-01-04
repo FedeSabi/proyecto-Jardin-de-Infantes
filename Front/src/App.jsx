@@ -13,7 +13,7 @@ import { Administrador } from "./pages/Administrador.jsx";
 
 const App = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Router>
         <Navbar/>
         <Routes>
@@ -29,7 +29,7 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
-    </>
+    </div>
   );
 };
 

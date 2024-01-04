@@ -2,7 +2,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
 
   return (
-    <footer className="px-4 pb-4 xl:px-0 xl:pb-[80px]">
+    <footer className="mt-auto px-4 pb-4 xl:px-0 xl:pb-[80px]">
       <div className=" my-6 hidden h-[1px] w-full bg-[#EEEEEE] xl:block"></div>
 
       <div className=" relative mx-auto lg:max-w-[54rem] xl:flex xl:gap-[168px] xl:py-[80px] 2xl:max-w-[76rem]">
@@ -95,8 +95,8 @@ const Footer = () => {
 
           <div>
             <h3 className=" mb-4 font-medium tracking-[0.08px]">Síguenos</h3>
-            <ul className="flex mt-4 gap-x-3">
-              <li className="text-white bg-black rounded-full">
+            <ul className="mt-4 flex gap-x-3">
+              <li className="rounded-full bg-black text-white">
                 <a
                   href="#"
                   className="flex h-[2rem] w-[2rem] items-center justify-center"
@@ -105,7 +105,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li className="text-white bg-black rounded-full">
+              <li className="rounded-full bg-black text-white">
                 <a
                   href="#"
                   className="flex h-[2rem] w-[2rem] items-center justify-center"
@@ -114,7 +114,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li className="text-white bg-black rounded-full">
+              <li className="rounded-full bg-black text-white">
                 <a
                   href="#"
                   className="flex h-[2rem] w-[2rem] items-center justify-center"
@@ -129,7 +129,7 @@ const Footer = () => {
 
       <div className="line"></div>
 
-      <div className=" mx-auto max-w-[76rem] xl:mt-[100px] xl:flex xl:items-center xl:justify-between">
+      <div className=" mx-auto lg:max-w-[54rem] xl:mt-[100px] xl:flex xl:items-center xl:justify-between 2xl:max-w-[76rem]">
         <span className="text-[#7C858E] sm:text-center">
           Copyright © {currentYear} Kids by johnnathandesigner. All Rights
           Reserved.
