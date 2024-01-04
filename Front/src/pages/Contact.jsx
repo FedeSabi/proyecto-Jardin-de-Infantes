@@ -4,7 +4,7 @@ import ContactInformation from "../components/ContactComponent.jsx/ContactInform
 
 export const Contact = () => {
   return (
-    <div>
+    <div className="overflow-hidden ">
       <ContactHeader />
       <ContactInformation />
       <ContactForm />

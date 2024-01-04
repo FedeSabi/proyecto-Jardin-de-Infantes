@@ -4,7 +4,7 @@ import { AdmissionForm } from "../components/AdmissionComponents/AdmissionForm";
 
 export const Admission = () => {
   return (
-    <div>
+    <div className="overflow-hidden ">
       <AdmissionHeader />
       <AdmissioJoinUS />
       <AdmissionForm />

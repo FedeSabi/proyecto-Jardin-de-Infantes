@@ -4,7 +4,7 @@ import { FacilitieClassroom } from "../components/FacilitiesComponents/Facilitie
 
 export const Facilities = () => {
   return (
-    <div>
+    <div className="overflow-hidden ">
       <FacilitiesHeader />
       <FacilitiesInfrastructure />
       <FacilitieClassroom />
