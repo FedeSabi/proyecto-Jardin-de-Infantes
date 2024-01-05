@@ -32,7 +32,7 @@ export const Navbar = () => {
           : "w-full bg-white lg:top-[55px] lg:rounded-xl lg:bg-gray-200 lg:bg-opacity-10 lg:px-4 lg:backdrop-blur-md xl:w-[80%] 2xl:w-[79.25rem]"
       }`}
     >
-      <nav className="flex items-center justify-between lg:max-w-[54rem] lg:mx-auto 2xl:max-w-[79.25rem]">
+      <nav className="flex items-center justify-between lg:mx-auto lg:max-w-[54rem] 2xl:max-w-[79.25rem]">
         <NavLink to="/">
           <img className="w-24" src="/logo.svg" alt="logo" />
         </NavLink>
@@ -61,6 +61,7 @@ export const Navbar = () => {
           <ul className="space-y-10 lg:flex lg:space-x-4 lg:space-y-0">
             <li>
               <NavLink
+                onClick={toggleMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/"
               >
@@ -69,6 +70,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
+                onClick={toggleMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/nosotros"
               >
@@ -77,6 +79,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
+                onClick={toggleMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/servicios"
               >
@@ -85,6 +88,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
+                onClick={toggleMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/facilities"
               >
@@ -93,6 +97,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
+                onClick={toggleMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/admission"
               >
@@ -101,6 +106,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
+                onClick={toggleMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/contact"
               >
@@ -109,6 +115,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
+                onClick={toggleMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/login"
               >
@@ -123,19 +130,19 @@ export const Navbar = () => {
             </span>
             <div className="mt-4 flex gap-3 text-[#7C858E]">
               <a
-                className="flex items-center justify-center w-8 h-8 bg-white rounded-full"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white"
                 href="#"
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>
               <a
-                className="flex items-center justify-center w-8 h-8 bg-white rounded-full"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white"
                 href="#"
               >
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
               <a
-                className="flex items-center justify-center w-8 h-8 bg-white rounded-full"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white"
                 href="#"
               >
                 <i className="fa-brands fa-linkedin-in"></i>
