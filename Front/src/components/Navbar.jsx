@@ -9,6 +9,10 @@ export const Navbar = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -61,7 +65,7 @@ export const Navbar = () => {
           <ul className="space-y-10 lg:flex lg:space-x-4 lg:space-y-0">
             <li>
               <NavLink
-                onClick={toggleMenu}
+                onClick={closeMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/"
               >
@@ -70,7 +74,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
-                onClick={toggleMenu}
+                onClick={closeMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/nosotros"
               >
@@ -79,7 +83,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
-                onClick={toggleMenu}
+                onClick={closeMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/servicios"
               >
@@ -88,7 +92,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
-                onClick={toggleMenu}
+                onClick={closeMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/facilities"
               >
@@ -97,7 +101,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
-                onClick={toggleMenu}
+                onClick={closeMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/admission"
               >
@@ -106,7 +110,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
-                onClick={toggleMenu}
+                onClick={closeMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/contact"
               >
@@ -115,7 +119,7 @@ export const Navbar = () => {
             </li>
             <li>
               <NavLink
-                onClick={toggleMenu}
+                onClick={closeMenu}
                 className="text-white lg:text-black lg:hover:text-blue-500"
                 to="/login"
               >
